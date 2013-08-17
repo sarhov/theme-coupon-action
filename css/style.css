@@ -1,0 +1,4 @@
+html{
+	background: repeating-linear-gradient(-60deg, #00c8e6, #00c8e6 35px, #1ee2ff 35px, #1ee2ff 70px);
+	min-height: 100%;
+}
