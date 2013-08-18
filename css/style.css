@@ -21,16 +21,45 @@ body{
 .global-inner{
 	width: 100%;
 	margin: 0 auto;
-	max-width: 1000px;
+	max-width: 1024px;
 	padding: 0 40px;
 }
 
 .main-head-inner{
-	padding-top: 140px;
+	
 }
 
 .search-wrap{
  	top: 0;	
  	left: 0;
- 	padding: 1.25em;
+ 	padding: 1.25em 0;
+ 	border: 1px solid #000;
+}
+
+/*top-header-search-seaction*/
+
+.search-box-centered{
+	margin-left: -0.63em;
+}
+
+.search-box{
+	margin-left: 0.63em
+}
+
+.search-box-input{
+	width: 51%;
+}
+
+.search-box-input-itself{
+	width: 100%;
+}
+
+
+
+.search-box-cat{
+	width: 27%;
+}
+
+.search-box-submit{
+	width: 12%;
 }
