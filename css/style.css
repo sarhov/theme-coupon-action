@@ -2,3 +2,35 @@ html{
 	background: repeating-linear-gradient(-60deg, #00c8e6, #00c8e6 35px, #1ee2ff 35px, #1ee2ff 70px);
 	min-height: 100%;
 }
+
+body{
+	font-size: 100%;
+}
+
+/*header section*/
+
+.main-head{
+	width: 100%;
+	border
+}
+
+.global-outer{
+	width: 100%;
+}
+
+.global-inner{
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 0 40px;
+}
+
+.main-head-inner{
+	padding-top: 140px;
+}
+
+.search-wrap{
+ 	top: 0;	
+ 	left: 0;
+ 	padding: 1.25em;
+}
