@@ -39,15 +39,16 @@ body{
 /*top-header-search-seaction*/
 
 .search-box-centered{
-	margin-left: -0.63em;
+	margin-left: -1.058201%;
 }
 
 .search-box{
-	margin-left: 0.63em
+	margin-left: 1.058201%;
+	background-color: #9c0;
 }
 
 .search-box-input{
-	width: 51%;
+	width: 54.026455%;
 }
 
 .search-box-input-itself{
@@ -57,9 +58,10 @@ body{
 
 
 .search-box-cat{
-	width: 27%;
+	width: 29.100529%;
 }
 
 .search-box-submit{
-	width: 12%;
+	width: 13.756614%;
 }
+
