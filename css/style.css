@@ -30,15 +30,30 @@ body{
 	
 }
 
-.site-header{
-	background-color: #9c0;
-}
-
 .search-wrap{
  	top: 0;	
  	left: 0;
  	padding: 1.25em 0;
  	border: 1px solid #000;
+}
+
+/*site header*/
+
+.site-header{
+	background-color: #9c0;
+}
+
+.site-title{
+	width: 41.111111%;
+	margin: 0;
+}
+
+.site-header-info-part{
+	width: 67.340426%;
+}
+
+.site-header-top-menu{
+	width: 67.340426%;
 }
 
 /*top-header-search-seaction*/
