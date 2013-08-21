@@ -5,6 +5,7 @@ html{
 
 body{
 	font-size: 100%;
+
 }
 
 /*header section*/
@@ -22,11 +23,15 @@ body{
 	width: 100%;
 	margin: 0 auto;
 	max-width: 1024px;
-	padding: 0 40px;
+	padding: 0 4.101562%;
 }
 
 .main-head-inner{
 	
+}
+
+.site-header{
+	background-color: #9c0;
 }
 
 .search-wrap{
@@ -44,18 +49,16 @@ body{
 
 .search-box{
 	margin-left: 1.058201%;
-	background-color: #9c0;
+	background-color: #9c0;  /*temp*/
 }
 
 .search-box-input{
-	width: 54.026455%;
+	width: 53.026455%;
 }
 
 .search-box-input-itself{
 	width: 100%;
 }
-
-
 
 .search-box-cat{
 	width: 29.100529%;
@@ -65,3 +68,51 @@ body{
 	width: 13.756614%;
 }
 
+.slider{
+	height: 300px; /*temp*/
+	background-color: #ddd; /*temp*/
+}
+
+
+
+/*main content*/
+
+
+.main-sidebar{
+	width: 29.468085%;
+	height: 450px; /*temp*/
+	background: #000;  /*temp*/
+}
+
+.content-wrapper{
+	background-color: #fff; /*temp*/
+	padding: 50px 0; /*temo*/
+}
+
+.main-content-wrapper{
+	width:67.340426%;
+	height: 450px;
+	background-color: #000; /*temp*/
+	margin-left: 3.191489%;
+}
+
+
+/*pre footer*/
+
+.pre-footer{
+	padding: 50px 0; /*temp*/
+}
+
+.pre-footer-big-block{
+	height: 450px; /*temp*/  
+	width:64.893617% ;
+	background-color: #ded;  /*temp*/
+}
+
+
+.pre-footer-small-block{
+	height: 450px; /*temp*/
+	width: 32.678723%;
+	background-color: #ddd;
+	margin-left: 2.340426%;
+}
