@@ -31,8 +31,25 @@ display: table; /* 2 */
   position: absolute;
 }
 
+.cr{
+  clear:right;
+}
+
+.cl{
+  clear: left;
+}
+
+.cb{
+  clear: both;
+}
 
 
+
+/*custom*/
+
+a{
+  text-decoration: none;
+}
 
 
 /*

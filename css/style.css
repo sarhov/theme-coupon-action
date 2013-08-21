@@ -5,8 +5,8 @@ html{
 
 body{
 	font-size: 100%;
-
 }
+
 
 /*buttons*/
 
@@ -17,7 +17,7 @@ body{
 	border: none;
 	color: #fff;
 	font-family: denda;
-	padding: 5px 25px;
+	padding: 6px 35px;
 	-webkit-box-shadow: 0 2px 0px #7d4f81;
 	-moz-box-shadow: 0 2px 0px #7d4f81;
 	box-shadow: 0 2px 0px #7d4f81;
@@ -29,6 +29,14 @@ body{
 	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
 	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
 	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
+}
+
+.l-button{
+	background: #00c8e6;
+}
+
+.l-button:hover{
+	background: #a2f3ff;
 }
 
 
@@ -63,7 +71,9 @@ body{
 /*site header*/
 
 .site-header{
-	background-color: #9c0;
+	background-color: #33ccff;
+	border-top: 2px dotted #fff;
+	padding-top: 0.94em;
 }
 
 .site-title{
@@ -81,19 +91,21 @@ body{
 
 /*top-header-search-seaction*/
 
-.search-box-centered{
-	margin-left: -1.058201%;
-}
+
 
 .search-box{
-	margin-left: 1.058201%;
+	margin-left: 1.0582%;
 	font-family: 'Gafata', sans-serif;
 	font-size: 1.13em;
 	color: #94CBD3;
 }
 
+.search-box:first-of-type{
+	margin-left: 0;
+}
+
 .search-box-input{
-	width: 53.026455%;
+	width: 54.8191%;
 }
 
 .search-box-input-itself{
@@ -101,7 +113,7 @@ body{
 	color: #94CBD3;
 	background: rgba(255,255,255,0.66);
 	border: none;
-	padding: 6px;
+	padding: 7px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
@@ -111,13 +123,13 @@ body{
 }
 
 .search-box-cat{
-	width: 29.100529%;
+	width: 29.2553%;
 }
 
 .select-cat-wrap{
 	background: rgba(255,255,255,0.66);
 	border: none;
-	padding: 6px;
+	padding: 7px;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
