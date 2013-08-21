@@ -8,6 +8,29 @@ body{
 
 }
 
+/*buttons*/
+
+.g-button{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	border: none;
+	color: #fff;
+	font-family: denda;
+	padding: 5px 25px;
+	-webkit-box-shadow: 0 2px 0px #7d4f81;
+	-moz-box-shadow: 0 2px 0px #7d4f81;
+	box-shadow: 0 2px 0px #7d4f81;
+	position: relative;
+}
+
+.g-button:active{
+	bottom: -1px;
+	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
+	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
+	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
+}
+
 
 /*header section*/
 
@@ -44,7 +67,7 @@ body{
 }
 
 .site-title{
-	width: 41.111111%;
+	width: 29.468085%;
 	margin: 0;
 }
 
@@ -123,20 +146,7 @@ body{
 
 .search-box-submit-itself{
 	background:#9a749d;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
-	border: none;
-	color: #fff;
-	font-family: denda;
-	padding: 5px 25px;
-	-webkit-box-shadow: 0 2px 0px #7d4f81;
-	-moz-box-shadow: 0 2px 0px #7d4f81;
-	box-shadow: 0 2px 0px #7d4f81;
-	position: relative;
-
-
-	
+	color:#fff;
 }
 
 .search-box-submit-itself:hover{
@@ -145,12 +155,18 @@ body{
 
 
 .search-box-submit-itself:active{
-	bottom: -1px;
 		background: #7c4f80;
 	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
 	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
 	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
 }
+
+.site-title-url{
+	text-indent: -9999px;
+	display: block;
+	background:url('../images/logo.png') no-repeat;
+}
+
 
 .slider{
 	height: 300px; /*temp*/
