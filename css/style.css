@@ -8,6 +8,19 @@ body{
 
 }
 
+
+.denda{
+	font-family: denda;
+}
+
+.denda-light{
+	font-family: denda-light;
+}
+
+.denda-bold{
+	font-family: denda-bold;
+}
+
 /*header section*/
 
 .main-head{
