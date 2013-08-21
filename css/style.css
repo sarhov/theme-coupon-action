@@ -116,3 +116,21 @@ body{
 	background-color: #ddd;
 	margin-left: 2.340426%;
 }
+
+/*footer*/
+
+
+.main-foot{
+	background-color: #ddd;    /*temp*/
+}
+
+.main-foot-centered{
+	margin-left: -1.914894%;;
+}
+
+.main-foot-block{
+	width: 18.085106%;
+	margin-left:1.914894%;
+	background: #000;
+}
+
