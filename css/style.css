@@ -133,6 +133,10 @@ body{
 	-webkit-box-shadow: 0 2px 0px #7d4f81;
 	-moz-box-shadow: 0 2px 0px #7d4f81;
 	box-shadow: 0 2px 0px #7d4f81;
+	position: relative;
+
+
+	
 }
 
 .search-box-submit-itself:hover{
@@ -141,9 +145,11 @@ body{
 
 
 .search-box-submit-itself:active{
-		-webkit-box-shadow: 0 1px 0px #7d4f81, inset 0 -2px 0px #7d4f81;
-	-moz-box-shadow: 0 1px 0px #7d4f81, inset 0 -2px 0px #7d4f81;
-	box-shadow: 0 1px 0px #7d4f81, inset 0 -2px 0px #7d4f81;
+	bottom: -1px;
+		background: #7c4f80;
+	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
+	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
+	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
 }
 
 .slider{
