@@ -134,3 +134,23 @@ body{
 	background: #000;
 }
 
+/*post footer*/
+
+.post-foot-box{
+	height: 100px;/*temp*/
+	background: #eee; /*temp*/
+}
+
+.post-foot-social{
+	width: 30.319149%;
+	height: 200px;
+}
+
+
+.copyrights, .post-foot-nav{
+	width: 69.680851%;
+}
+
+
+
+
