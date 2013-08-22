@@ -74,6 +74,7 @@ body{
 	background-color: #33ccff;
 	border-top: 2px dotted #fff;
 	padding-top: 0.94em;
+	padding-bottom: 0.94em;
 }
 
 .site-title{
@@ -81,14 +82,17 @@ body{
 	margin: 0;
 }
 
-.site-header-info-part{
+.site-head-info-part{
 	width: 67.340426%;
+	text-align: right;
 }
 
 .site-header-top-menu{
 	width: 67.340426%;
+	text-align: right;
 	font-family: 'Gafata', sans-serif;
 	font-size: 1.25em;
+	margin-top: 30px
 }
 
 /*top-header-search-seaction*/
@@ -178,7 +182,7 @@ body{
 .site-title-url{
 	text-indent: -9999px;
 	display: block;
-	min-height: 80px;
+	min-height: 73px;
 	background:url('../images/logo.png') no-repeat;
 }
 
