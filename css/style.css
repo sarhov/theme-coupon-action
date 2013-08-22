@@ -71,7 +71,7 @@ body{
 /*site header*/
 
 .site-header{
-	background-color: #33ccff;
+	background-color: #1ee2ff;
 	border-top: 2px dotted #fff;
 	padding-top: 0.94em;
 	padding-bottom: 0.94em;
@@ -93,6 +93,10 @@ body{
 	font-family: 'Gafata', sans-serif;
 	font-size: 1.25em;
 	margin-top: 30px
+}
+
+.top-menu-items a{
+	margin-left: 7.541478%;
 }
 
 /*top-header-search-seaction*/
