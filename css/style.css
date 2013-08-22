@@ -176,6 +176,7 @@ body{
 .site-title-url{
 	text-indent: -9999px;
 	display: block;
+	min-height: 80px;
 	background:url('../images/logo.png') no-repeat;
 }
 
