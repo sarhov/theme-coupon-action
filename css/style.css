@@ -217,6 +217,7 @@ body{
 	font-size: 2.69em;
 	text-transform: capitalize;
 	margin: 0 0 10px 0;
+	font-family: denda, serif;
 }
 
 .main-sidebar-navigation{
@@ -225,6 +226,7 @@ body{
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
+	font-family: gafata, sans-serif;
 	overflow: hidden;
 }
 
@@ -240,6 +242,7 @@ body{
 
 .msni-more{
 	display: none;
+	
 }
 
 .msni-link{
@@ -254,7 +257,7 @@ body{
 	width: 100%;
 }
 
-.msnim-opener{
+.msnim-opener-wrap{
 	width: 100%;
 	display: block;
 	cursor: pointer;
@@ -262,6 +265,35 @@ body{
 	color: #fff;
 	padding:0.56em; /*10/18*/
 	text-align: center;
+}
+
+.msnim-opener.active{
+	color: #00C8E6;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+	
+.msnim-opener:after{
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+	position: relative;
+	bottom: 2px;
+}
+
+.msnim-opener.active:after{
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	-ms-transform: rotate(-180deg);
+	-o-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+	top: 4px;
+
 }
 
 .main-sidebar-navigation-item:hover{
