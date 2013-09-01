@@ -34,6 +34,7 @@ body{
 
 .l-button{
 	background: #00c8e6;
+	padding: 8px 17px;
 }
 
 .l-button:hover{
@@ -320,9 +321,9 @@ body{
     background: repeating-linear-gradient(-66deg, #F3BB62, #F3BB62 25px, #F5C77E 25px, #F5C77E 51px) repeat scroll 0 0 transparent;
     min-height: 100%;
     font-family: gafata, sans-serif;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    -webkit-border-radius: ;px;
+    -moz-border-radius: ;px;
+    border-radius: ;px;
     overflow: hidden;
 }
 
@@ -336,16 +337,84 @@ body{
 
 .submit-coupon-wrap label{
 	display: block;
+	color: #9e6c1d;
 }
 
-.submit-coupon-wrap input[type=text]{
-	    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.66);
-    border: medium none;
-    border-radius: 4px 4px 4px 4px;
-    box-shadow: 0 3px 2px rgba(60, 60, 60, 0.13) inset;
-    color: #94CBD3;
-    padding: 7px;
-    width: 97%;
+.submit-coupon-wrap input[type=text], #submit-comment{
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: medium none;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0 3px 1px 1px #EBE1D4 inset;
+	color: #94CBD3;
+	padding: 7px;
+	width: 100%;
+	-webkit-box-sizing: padding-box;
+	-moz-box-sizing: padding-box;
+	box-sizing: padding-box;
+}
+
+#submit-comment{
+	height: 150px;
+}
+
+.coupon-submit-button{
+	font-size: 1.68em;
+	color: #fff;
+	text-align: center;
+	display: block;
+	width: 100%;
+	background: #00c8e6;
+	padding: 0.33em 0;
+}
+
+.coupon-submit-button:hover{
+	background: #1ed6f2;
+}
+
+.coupon-submit-button:active{
+		background: #00bad6;
+		-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #a2f3ff;
+	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #a2f3ff;
+	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #a2f3ff;
+}
+
+.experiation-box{
+	cursor: pointer;
+}
+
+.experiation-box:before{
+	background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 3px 3px 3px 3px;
+    color: rgba(255,255,255, 0);
+    font-size: 0.8em;
+    height: 17px;
+    width: 17px;
+    padding: 2px 3px 3px;
+    box-shadow: 0 1px 1px 1px #EBE1D4 inset;
+    margin-right: 5px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#no-experiation{
+	display: none;
+}
+
+#no-experiation:checked + label:before{
+	font-size: 0.8em;
+	color:rgba(0,0,0,1);
+}
+
+.submit-coupon-wrap input[type=text]:focus, #submit-comment:focus{
+	border:2px solid #e69f2d;
+	padding: 5px;
+}
+
+#submit-comment:focus{
+	height: 146px;
 }
 
 .content-wrapper{
