@@ -232,6 +232,15 @@ body{
 	width: 31.868085%;
 }
 
+.sidebar-box{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	overflow: hidden;
+	margin-bottom: 32px;
+	padding: 10px 0;
+}
+
 .main-sidebar-title{
 	color: #0a708d;
 	font-size: 2.69em;
@@ -243,12 +252,10 @@ body{
 .main-sidebar-navigation{
 	padding: 0;
 	background: #e4f7fa;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
+
 	border-radius: 3px;
 	font-family: gafata, sans-serif;
-	overflow: hidden;
-	margin-bottom: 32px;
+
 }
 
 .main-sidebar-navigation-item{
@@ -321,10 +328,7 @@ body{
     background: repeating-linear-gradient(-66deg, #F3BB62, #F3BB62 25px, #F5C77E 25px, #F5C77E 51px) repeat scroll 0 0 transparent;
     min-height: 100%;
     font-family: gafata, sans-serif;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    overflow: hidden;
+
 }
 
 .submit-coupon-title{
@@ -415,6 +419,80 @@ body{
 
 #submit-comment:focus{
 	height: 146px;
+}
+
+.sidebar-banner{
+	border:2px solid #00c8e6;
+}
+
+.sidebar-banner-url{
+	display: block;
+}
+
+.social-buttons{
+	text-align: center;
+	white-space: nowrap;
+}
+
+.social-buttons-item{
+	background: none repeat scroll 0 0 rgb(221, 221, 221);
+	display: inline-block;
+	height: 70px;
+	margin-left: 2px;
+	padding: 18px 0;
+	text-align: center;
+	width: 64px;
+}
+
+
+.soc-button-fb{
+	background: #5d82d1;
+}
+
+.soc-button-fb:hover{
+	background: #7797dd;
+}
+
+.soc-button-fb:active{
+	background: #4770c8;
+	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #7797dd;
+	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #7797dd;
+	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #7797dd;
+}
+
+.soc-button-tw{
+	background: #40bff5;
+}
+
+.soc-button-tw:hover{
+	background: #75cef4;
+}
+
+.soc-button-tw:active{
+	background: #18a9e6;
+	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #75cef4;
+	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #75cef4;
+	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #75cef4;
+}
+
+.soc-button-gp{
+	background: #eb5e4c;
+}
+
+.soc-button-gp:hover{
+	background: #ff7462;
+}
+
+.soc-button-gp:active{
+	background: #d54a39;
+	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #ff7462;
+	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #ff7462;
+	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #ff7462;
+}
+
+
+.social-buttons-item-text{
+	font-size: 2em;
 }
 
 .content-wrapper{
