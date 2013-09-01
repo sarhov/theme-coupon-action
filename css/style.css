@@ -321,9 +321,9 @@ body{
     background: repeating-linear-gradient(-66deg, #F3BB62, #F3BB62 25px, #F5C77E 25px, #F5C77E 51px) repeat scroll 0 0 transparent;
     min-height: 100%;
     font-family: gafata, sans-serif;
-    -webkit-border-radius: ;px;
-    -moz-border-radius: ;px;
-    border-radius: ;px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     overflow: hidden;
 }
 
@@ -405,7 +405,7 @@ body{
 
 #no-experiation:checked + label:before{
 	font-size: 0.8em;
-	color:rgba(0,0,0,1);
+	color:rgba(95, 95, 95, 0.99);
 }
 
 .submit-coupon-wrap input[type=text]:focus, #submit-comment:focus{
