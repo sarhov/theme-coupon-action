@@ -40,6 +40,14 @@ body{
 	background: #a2f3ff;
 }
 
+.l-button:active{
+	background: #00bad6;
+			-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #00c8e6;
+	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #00c8e6;
+	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #00c8e6;
+}
+
+
 .site-head-signup {
     background: none repeat scroll 0 0 #00D1F0;
 }
@@ -50,9 +58,10 @@ body{
 
 .site-head-signup:active{
 	background: #00bad6;
+		-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #a2f3ff;
+	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #a2f3ff;
+	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #a2f3ff;
 }
-
-
 
 /*header section*/
 
@@ -124,8 +133,6 @@ body{
 }
 
 /*top-header-search-seaction*/
-
-
 
 .search-box{
 	margin-left: 1.0582%;
@@ -199,7 +206,6 @@ body{
 	background: #b182b5;
 }
 
-
 .search-box-submit-itself:active{
 		background: #7c4f80;
 	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #b182b5;
@@ -214,7 +220,6 @@ body{
 	background:url('../images/logo.png') no-repeat;
 }
 
-
 .slider{
 	height: 300px; /*temp*/
 	background-color: #ddd; /*temp*/
@@ -223,7 +228,7 @@ body{
 /*main content*/
 
 .main-sidebar{
-	width: 29.468085%;
+	width: 31.868085%;
 }
 
 .main-sidebar-title{
@@ -248,7 +253,6 @@ body{
 .main-sidebar-navigation-item{
 	padding: 0 0.94em;
 	background: #e4f7fa;
-
 }
 
 .main-sidebar-navigation-item:hover{
@@ -311,11 +315,23 @@ body{
 }
 
 .submit-coupon-wrap{
-	padding: 2.5 2.06; /*40/16  33/16*/
+	padding: 2.3em 1.86em; /*40/16  33/16*/
 	background: #000;
     background: repeating-linear-gradient(-66deg, #F3BB62, #F3BB62 25px, #F5C77E 25px, #F5C77E 51px) repeat scroll 0 0 transparent;
     min-height: 100%;
     font-family: gafata, sans-serif;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.submit-coupon-title{
+	font-family: "denda-bold", serif;
+	color: #fff;
+	text-align: center;
+	margin: 0 0  20px 0;
+	font-size: 1.63em;
 }
 
 .content-wrapper{
@@ -324,7 +340,7 @@ body{
 }
 
 .main-content-wrapper{
-	width:67.340426%;
+	width:64.918%;
 	height: 450px;
 	background-color: #000; /*temp*/
 	margin-left: 3.191489%;
