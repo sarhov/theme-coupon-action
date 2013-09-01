@@ -90,13 +90,23 @@ body{
 .site-header-top-menu{
 	width: 67.340426%;
 	text-align: right;
-	font-family: 'Gafata', sans-serif;
+	font-family: 'gafata', sans-serif;
 	font-size: 1.25em;
 	margin-top: 30px
 }
 
 .top-menu-items a{
-	margin-left: 7.541478%;
+	margin-left: 7.541478%; /* 50/663 */
+	text-transform: capitalize;	
+	-webkit-transition: all .2s;
+	-moz-transition: all .2s;
+	-ms-transition: all .2s;
+	-o-transition: all .2s;
+	transition: all .2s;
+}
+
+.top-menu-items a:hover{
+	color: #fff;
 }
 
 /*top-header-search-seaction*/
@@ -105,9 +115,9 @@ body{
 
 .search-box{
 	margin-left: 1.0582%;
-	font-family: 'Gafata', sans-serif;
+	font-family: 'gafata', sans-serif;
 	font-size: 1.13em;
-	color: #94CBD3;
+	color: #94cbd3;
 }
 
 .search-box:first-of-type{
@@ -120,7 +130,7 @@ body{
 
 .search-box-input-itself{
 	width: 97%;
-	color: #94CBD3;
+	color: #94cbd3;
 	background: rgba(255,255,255,0.66);
 	border: none;
 	padding: 7px;
@@ -159,7 +169,7 @@ body{
 	-webkit-box-shadow: 0 0 4px 1px #ddd;
 	-moz-box-shadow: 0 0 4px 1px #ddd;
 	box-shadow: 0 0 4px 1px #ddd;
-	color: #FFF;
+	color: #fff;
 }
 
 .search-box-submit{
@@ -200,8 +210,62 @@ body{
 
 .main-sidebar{
 	width: 29.468085%;
-	height: 450px; /*temp*/
-	background: #000;  /*temp*/
+}
+
+.main-sidebar-title{
+	color: #0a708d;
+	font-size: 2.69em;
+	text-transform: capitalize;
+	margin: 0 0 10px 0;
+}
+
+.main-sidebar-navigation{
+	padding: 0.31em 0 0;
+	background: #e4f7fa;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.main-sidebar-navigation-item{
+	padding: 0 0.94em;
+	background: #e4f7fa;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.msni-more{
+	display: none;
+}
+
+.msni-link{
+	color: #266577;
+	border-bottom:1px solid #fff;
+	border-top:#266577 ;
+	font-size:1.19em ;  /*19/16*/
+	text-transform: capitalize;
+	padding: 0.79em 0;  /*15/19*/
+	padding-left:50px ;
+	display: block;
+	width: 100%;
+}
+
+.msnim-opener{
+	width: 100%;
+	display: block;
+	cursor: pointer;
+	background: #b2e5f0;
+	color: #fff;
+	padding:0.56em; /*10/18*/
+	text-align: center;
+}
+
+.main-sidebar-navigation-item:hover{
+	background: #bff4ff;
 }
 
 .content-wrapper{
