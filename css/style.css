@@ -315,7 +315,7 @@ body{
 }
 
 .submit-coupon-wrap{
-	padding: 2.3em 1.86em; /*40/16  33/16*/
+	padding: 2.1em 1.56em; /*40/16  33/16*/
 	background: #000;
     background: repeating-linear-gradient(-66deg, #F3BB62, #F3BB62 25px, #F5C77E 25px, #F5C77E 51px) repeat scroll 0 0 transparent;
     min-height: 100%;
@@ -332,6 +332,20 @@ body{
 	text-align: center;
 	margin: 0 0  20px 0;
 	font-size: 1.63em;
+}
+
+.submit-coupon-wrap label{
+	display: block;
+}
+
+.submit-coupon-wrap input[type=text]{
+	    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.66);
+    border: medium none;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 3px 2px rgba(60, 60, 60, 0.13) inset;
+    color: #94CBD3;
+    padding: 7px;
+    width: 97%;
 }
 
 .content-wrapper{
