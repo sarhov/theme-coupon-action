@@ -228,7 +228,7 @@ body{
 	border-radius: 3px;
 	font-family: gafata, sans-serif;
 	overflow: hidden;
-	margin-bottom: 20px;
+	margin-bottom: 32px;
 }
 
 .main-sidebar-navigation-item{
@@ -294,6 +294,14 @@ body{
 	transform: rotate(-180deg);
 	top: 4px;
 
+}
+
+.submit-coupon-wrap{
+	padding: 2.5 2.06; /*40/16  33/16*/
+	background: #000;
+    background: repeating-linear-gradient(-66deg, #F3BB62, #F3BB62 25px, #F5C77E 25px, #F5C77E 51px) repeat scroll 0 0 transparent;
+    min-height: 100%;
+    font-family: gafata, sans-serif;
 }
 
 .content-wrapper{
