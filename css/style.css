@@ -615,6 +615,8 @@ body{
 	border-radius: 3px;
 }
 
+
+
 .pre-footer-big-block-title{
 	font-family: denda-bold, serif;
 	margin: 0;
@@ -636,11 +638,16 @@ body{
 	vertical-align: middle;
 }
 
+.pre-footer-big-block-article {
+    margin-bottom: 1.75em;
+}
+
 .pre-footer-big-block-article-title{
 	font-size: 1.38em;
 	color: #00a8c1;
 	font-family: gafata, sans-serif;
 	font-weight: normal;
+	margin-bottom: 0.4em;
 
 }
 
