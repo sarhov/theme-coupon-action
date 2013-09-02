@@ -523,6 +523,10 @@ body{
     text-shadow: 2px 2px 1px rgb(89, 89, 89), 4px 4px 1px rgb(106, 106, 106), 5px 5px 1px rgb(123, 122, 122);
 }
 
+.social-buttons-item:active:before{
+	bottom:-44px; /*prevent share count's moving*/
+}
+
 
 .social-buttons-item:before {
     background: none repeat scroll 0 0 #DDDDDD;
@@ -534,6 +538,9 @@ body{
     position: absolute;
     width: 100%;
     content: attr(data-share-count);
+    color: #003348;
+    font-size: 0.75em;
+    font-family: gafata, sans-serif;
 }
 
 
