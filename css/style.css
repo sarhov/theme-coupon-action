@@ -447,6 +447,9 @@ body{
 
 .soc-button-fb{
 	background: #5d82d1;
+	-webkit-box-shadow: 0 2px 0px #385ead;
+	-moz-box-shadow: 0 2px 0px #385ead;
+	box-shadow: 0 2px 0px #385ead;
 }
 
 .soc-button-fb:hover{
@@ -455,13 +458,16 @@ body{
 
 .soc-button-fb:active{
 	background: #4770c8;
-	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #7797dd;
-	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #7797dd;
-	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #7797dd;
+	-webkit-box-shadow: 0 1px 0px #244b9d, inset 0 2px 0px #7797dd;
+	-moz-box-shadow: 0 1px 0px #244b9d, inset 0 2px 0px #7797dd;
+	box-shadow: 0 1px 0px #244b9d, inset 0 2px 0px #7797dd;
 }
 
 .soc-button-tw{
 	background: #40bff5;
+	-webkit-box-shadow: 0 2px 0px #118abd;
+	-moz-box-shadow: 0 2px 0px #118abd;
+	box-shadow: 0 2px 0px #118abd;
 }
 
 .soc-button-tw:hover{
@@ -470,13 +476,16 @@ body{
 
 .soc-button-tw:active{
 	background: #18a9e6;
-	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #75cef4;
-	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #75cef4;
-	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #75cef4;
+	-webkit-box-shadow: 0 1px 0px #06709d, inset 0 2px 0px #75cef4;
+	-moz-box-shadow: 0 1px 0px #06709d, inset 0 2px 0px #75cef4;
+	box-shadow: 0 1px 0px #06709d, inset 0 2px 0px #75cef4;
 }
 
 .soc-button-gp{
 	background: #eb5e4c;
+	-webkit-box-shadow: 0 2px 0px #a8463a;
+	-moz-box-shadow: 0 2px 0px #a8463a;
+	box-shadow: 0 2px 0px #a8463a;
 }
 
 .soc-button-gp:hover{
@@ -485,15 +494,35 @@ body{
 
 .soc-button-gp:active{
 	background: #d54a39;
-	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #ff7462;
-	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #ff7462;
-	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #ff7462;
+	-webkit-box-shadow: 0 1px 0px #982a1c, inset 0 2px 0px #ff7462;
+	-moz-box-shadow: 0 1px 0px #982a1c, inset 0 2px 0px #ff7462;
+	box-shadow: 0 1px 0px #982a1c, inset 0 2px 0px #ff7462;
+}
+
+.soc-button-rss{
+	background: #faa33d;
+	-webkit-box-shadow: 0 2px 0px #b26e1e;
+	-moz-box-shadow: 0 2px 0px #b26e1e;
+	box-shadow: 0 2px 0px #b26e1e;
+}
+
+.soc-button-rss:hover{
+	background: #ffbb6c;
+}
+
+.soc-button-rss:active{
+	background: #eb8d1f;
+	-webkit-box-shadow: 0 1px 0px #9e5b0c, inset 0 2px 0px #ffbb6c;
+	-moz-box-shadow: 0 1px 0px #9e5b0c, inset 0 2px 0px #ffbb6c;
+	box-shadow: 0 1px 0px #9e5b0c, inset 0 2px 0px #ffbb6c;
+}
+
+.social-buttons-item-text {
+    font-size: 2.3em;
+    text-shadow: 2px 2px 1px rgb(89, 89, 89), 4px 4px 1px rgb(106, 106, 106), 5px 5px 1px rgb(123, 122, 122);
 }
 
 
-.social-buttons-item-text{
-	font-size: 2em;
-}
 
 .content-wrapper{
 	background-color: #fff; /*temp*/
