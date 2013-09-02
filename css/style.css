@@ -613,6 +613,15 @@ body{
 	background-color: #8ef0ff; 
 }
 
+.pre-footer-big-block-title{
+	font-family: denda-bold;
+	margin: 0;
+	font-size: 2.63em;
+	text-transform: capitalize;
+	color: #0a708d;
+	vertical-align: middle;
+}
+
 .pre-footer-small-block{
 	height: 450px; /*temp*/
 	width: 32.678723%;
