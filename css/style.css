@@ -623,12 +623,32 @@ body{
 	text-transform: capitalize;
 	color: #0a708d;
 	vertical-align: middle;
+	text-shadow: 0 1px 1px #66BECD, 0 4px 2px #66BECD, 0 3px 1px #66BECD;
 }
 
 .pre-footer-big-block-all{
 	color: #00acc5;
 	font-size: 1.13em;
 	font-family: gafata, sans-serif;
+}
+
+.pre-footer-big-block-all:hover{
+	color: #fff;
+	vertical-align: middle;
+}
+
+.pre-footer-big-block-article-title{
+	font-size: 1.38em;
+	color: #00a8c1;
+	font-family: gafata, sans-serif;
+	font-weight: normal;
+
+}
+
+.pre-footer-big-block-article-excerpt{
+	font-family: Arial, sans-serif;
+	font-size: 0.81em;
+	color: #246b76;
 }
 
 .pre-footer-small-block{
