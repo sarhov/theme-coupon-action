@@ -4,14 +4,14 @@
 
 Что здесь подразумивается, слайдер или просто бакгроунд и над ним карусел?
 
-http://i.imgur.com/HYtrATQ.jpg
+![](http://i.imgur.com/HYtrATQ.jpg)
 
 
 ----------
 
 Здесь иконки идут, 
 
-http://i.imgur.com/61wmJEs.png
+![](http://i.imgur.com/61wmJEs.png)
 
 как и сказал все будет ретина реди, здесь два варината идут или делаем спрайт с двумя варинатми обычним и "@2x", или можем  выбрать [аналогичние иконки отсюда](http://sarhov.com/theme-coupon-action/icons/ "Иконки"), из иконошрифтов и они всегда устойчиви к зуму и ретина дисплеев.
 
@@ -20,7 +20,7 @@ http://i.imgur.com/61wmJEs.png
 
 Здесь будут таби, или сортировка что подразумивается
 
-http://i.imgur.com/FZhhNxp.png
+![](http://i.imgur.com/FZhhNxp.png)
 
 
 ----------
@@ -28,7 +28,7 @@ http://i.imgur.com/FZhhNxp.png
 Какая будет подстраничная навигация, 
 
 
-http://i.imgur.com/PmagIHH.png
+![](http://i.imgur.com/PmagIHH.png)
 
 с циверками, с бесконечним скроллом ([пример](http://aurgasm.us/ "Бесконечний скролл")) или как твиттер  (http://www.infinite-scroll.com/trigger.html)
 
