@@ -529,20 +529,64 @@ body{
 
 
 .social-buttons-item:before {
-    background: none repeat scroll 0 0 #DDDDDD;
-    border-radius: 4px 4px 4px 4px;
-    bottom: -45px;
-    content: "";
-    height: 28px;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    content: attr(data-share-count);
-    color: #003348;
-    font-size: 0.75em;
-    font-family: gafata, sans-serif;
+	background: none repeat scroll 0 0 #DDDDDD;
+	border-radius: 2px 2px 2px 2px;
+	bottom: -37px;
+	color: #003348;
+	content: attr(data-share-count);
+	font-family: gafata,sans-serif;
+	font-size: 0.75em;
+	left: 0;
+	padding: 0.4em 0;
+	position: absolute;
+	width: 100%;
 }
 
+.social-buttons-item:after {
+	background: none repeat scroll 0 0 transparent;
+	border-color: transparent transparent #DDDDDD;
+	border-style: solid;
+	border-width: 12px;
+	bottom: -17px;
+	content: "";
+	height: 0;
+	left: 50%;
+	margin-left: -11px;
+	position: absolute;
+	width: 0;
+}
+
+.soc-button-fb:before{
+	background: #d3ddf3;
+}
+
+.soc-button-fb:after{
+	border-bottom-color: #d3ddf3;
+}
+
+.soc-button-tw:before{
+	background: #c8ecfc;
+}
+
+.soc-button-tw:after{
+	border-bottom-color: #c8ecfc;
+}
+
+.soc-button-gp:before{
+	background: #f9d0cb;
+}
+
+.soc-button-gp:after{
+	border-bottom-color: #f9d0cb;
+}
+
+.soc-button-rss:before{
+	background: #fde6ca;
+}
+
+.soc-button-rss:after{
+	border-bottom-color: #fde6ca;
+}
 
 .content-wrapper{
 	background-color: #fff; /*temp*/
