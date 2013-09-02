@@ -122,11 +122,7 @@ body{
 .top-menu-items a{
 	margin-left: 7.541478%; /* 50/663 */
 	text-transform: capitalize;	
-	-webkit-transition: all .2s;
-	-moz-transition: all .2s;
-	-ms-transition: all .2s;
-	-o-transition: all .2s;
-	transition: all .2s;
+
 }
 
 .top-menu-items a:hover{
@@ -658,10 +654,34 @@ body{
 }
 
 .pre-footer-small-block{
-	height: 450px; /*temp*/
 	width: 32.678723%;
 	background-color: #ddd;
 	margin-left: 2.340426%;
+	padding: 2.5em 1.88em;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+	background:#ffdd8b;
+}
+
+.pre-footer-small-block-title{
+	margin: 0;
+	font-size: 100%;
+	color: #e49d4b;
+	text-transform: uppercase;
+	font-family: denda-bold, serif;
+	line-height: 1;
+}
+
+.pre-footer-small-block-title-text1{
+	margin: 0;
+	
+	font-size: 2.37em;
+}
+
+.pre-footer-small-block-title-text2{
+	font-size: 2.699em;
 }
 
 /*footer*/
