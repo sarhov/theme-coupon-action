@@ -685,7 +685,7 @@ body{
 	font-size: 2.699em;
 }
 
-.small-block-subscrive-form-input{
+.small-block-subscribe-form-input{
 	padding: 10px 5px 7px;
 	width: 100%;
 	display: block;
@@ -713,14 +713,20 @@ body{
 	padding: 0.46em;
 	width: 100%;
 	text-align: center;
+	-webkit-box-shadow: 0 2px 0px #cb8431;
+	-moz-box-shadow: 0 2px 0px #cb8431;
+	box-shadow: 0 2px 0px #cb8431;
 }
 
 .small-block-subscribe-form-submit:hover{
-
+	background: #f3b967;
 }
 
 .small-block-subscribe-form-submit:active{
-
+	background: #d8892b;
+	-webkit-box-shadow: 0 1px 0px #ae5011, inset 0 2px 0px #f3b967;
+	-moz-box-shadow: 0 1px 0px #ae5011, inset 0 2px 0px #f3b967;
+	box-shadow: 0 1px 0px #ae5011, inset 0 2px 0px #f3b967;
 }
 
 /*footer*/
