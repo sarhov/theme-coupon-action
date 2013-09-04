@@ -739,14 +739,24 @@ body{
 }
 
 .main-foot-centered{
-	margin-left: -1.914894%;
+	margin-left: -4.8%;
 	margin-bottom: 2.5em;
 }
 
 .main-foot-block{
-	width: 18.085106%;
-	margin-left:1.914894%;
+	margin-left:4.8%;
+	max-width: 170px;
+}
 
+.main-foot-categories-items-itself{
+	color: #fff;
+	font-size: 1.13em;
+	display: block;
+	line-height: 1.5;
+}
+
+.main-foot-categories-items-itself:hover{
+	color: #0a7f9e;
 }
 
 /*post footer*/
