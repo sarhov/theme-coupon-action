@@ -732,11 +732,14 @@ body{
 /*footer*/
 
 .main-foot{
-	background-color: #ddd;    /*temp*/
+	background-color: #1ee2ff;
+	 border-top: 2px dotted #FFFFFF;
+	 padding:2.5em  0 0 2em;
 }
 
 .main-foot-centered{
-	margin-left: -1.914894%;;
+	margin-left: -1.914894%;
+	margin-bottom: 2.5em;
 }
 
 .main-foot-block{
