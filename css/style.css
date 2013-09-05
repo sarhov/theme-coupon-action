@@ -217,9 +217,16 @@ body{
 	background:url('../images/logo.png') no-repeat;
 }
 
-.slider{
-	height: 300px; /*temp*/
-	background-color: #ddd; /*temp*/
+.carousel-wrap{
+	background: transparent url(../images/main-page-slide.jpg) center center/cover no-repeat ;
+}
+
+.site-slogans{
+	height: 300px;
+}
+
+.carousel-items{
+	height:200px;
 }
 
 /*main content*/
@@ -441,7 +448,6 @@ body{
 	width: 64px;
 }
 
-
 .soc-button-fb{
 	background: #5d82d1;
 	-webkit-box-shadow: 0 2px 0px #385ead;
@@ -522,7 +528,6 @@ body{
 .social-buttons-item:active:before{
 	bottom:-44px; /*prevent share count's moving*/
 }
-
 
 .social-buttons-item:before {
 	background: none repeat scroll 0 0 #DDDDDD;
