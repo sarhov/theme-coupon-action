@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
     <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
+    <!-- don't delete -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
+<script src="js/functions.js"></script>
+<!-- don't delete -->
     <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="js/libs/modernizr-2.6.2.min.js"></script>
     <script src="js/libs/carousel.js"></script>
@@ -69,7 +74,17 @@
      Welcome to the favorite place of the most ardent discounts and coupons hunters! Here you will find the latest merchants reviews and useful tips offered by our team. Join us and get always abreast about the newest deals and rebates from more than 1500 merchants! Spend less with CouponActions.com!
     </div> <!-- site-slogans -->
     <div class="carousel-items-wrap global-inner">
-      <section class="carousl-items">
+
+
+        <script>
+        $(document).ready(function($) {
+        $(".carousel-items").carouFredSel();
+        });
+        </script>
+
+
+
+      <section class="carousel-items">
 
         <figure class="carousel-item-itself">
           <a href="#"><img src="http://lorempixel.com/150/100/sports/2" alt=""></a>
@@ -93,6 +108,7 @@
 
       </section><!-- carousel-items -->
     </div>  <!-- carousel-items -->
+
 </div> <!-- carousel -->
 
 <div class="content-wrapper global-outer" role="main">
@@ -389,10 +405,6 @@
     </div> <!-- post-foot -->
     </div> <!-- main-foot-global-inner -->
   </footer> <!-- main-foot -->
-<!-- don't delete -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery.min.js"><\/script>')</script>
-<script src="js/functions.js"></script>
-<!-- don't delete -->
+
     </body>
 </html>
