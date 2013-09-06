@@ -82,6 +82,15 @@ body{
 	padding: 0 40px;
 }
 
+.gl-title{
+	color: #0a708d;
+	font-size: 2.69em;
+	text-transform: capitalize;
+	margin: 0 0 10px 0;
+	font-family: denda, serif;
+	text-shadow: 1px 1px 1px #C4D3D5, 2px 2px 1px #C4D3D5;
+}
+
 .main-head-inner{
 	
 }
@@ -239,10 +248,7 @@ body{
 	margin: 0 !important;
 	font-family: gafata, sans-serif;
 	font-size: 2em !important;
-	font-weight: normal;
 }
-
-
 
 .carousel-items{
 	width: 100%;
@@ -303,14 +309,7 @@ body{
 	margin-bottom: 32px;
 }
 
-.main-sidebar-title, .gl-title{
-	color: #0a708d;
-	font-size: 2.69em;
-	text-transform: capitalize;
-	margin: 0 0 10px 0;
-	font-family: denda, serif;
-	text-shadow: 1px 1px 1px #C4D3D5, 2px 2px 1px #C4D3D5;
-}
+
 
 .main-sidebar-navigation{
 	padding: 0;
