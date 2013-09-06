@@ -271,6 +271,7 @@ body{
 	text-transform: capitalize;
 	margin: 0 0 10px 0;
 	font-family: denda, serif;
+	text-shadow: 1px 1px 1px #C4D3D5, 2px 2px 1px #C4D3D5;
 }
 
 .main-sidebar-navigation{
