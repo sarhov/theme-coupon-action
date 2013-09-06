@@ -74,50 +74,53 @@
      Welcome to the favorite place of the most ardent discounts and coupons hunters! Here you will find the latest merchants reviews and useful tips offered by our team. Join us and get always abreast about the newest deals and rebates from more than 1500 merchants! Spend less with CouponActions.com!
     </div> <!-- site-slogans -->
     <div class="carousel-items-wrap global-inner">
+      <h2 class="gl-title banner-title">Featured Stores</h2>
+      <section class="carousel-items rel">
+        <div class="carousel-wrapping" id="banners">
+          <figure class="carousel-item-itself">
+            <a href="#"><img src="images/banner1.jpg" alt="banner image"></a>
+          </figure>
 
+          <figure class="carousel-item-itself">
+            <a href="#"><img src="images/banner2.jpg" alt="banner image"></a>
+          </figure>
 
+          <figure class="carousel-item-itself">
+            <a href="#"><img src="images/banner3.jpg" alt="banner image"></a>
+          </figure>
 
+          <figure class="carousel-item-itself">
+            <a href="#"><img src="images/banner1.jpg" alt="banner image"></a>
+          </figure>
 
+          <figure class="carousel-item-itself">
+            <a href="#"><img src="images/banner2.jpg" alt="banner image"></a>
+          </figure>
 
+          <figure class="carousel-item-itself">
+            <a href="#"><img src="images/banner3.jpg" alt="banner image"></a>
+          </figure>
 
-      <section class="carousel-items">
-
-        <figure class="carousel-item-itself">
-          <a href="#"><img src="images/banner1.jpg" alt="banner image"></a>
-        </figure>
-
-        <figure class="carousel-item-itself">
-          <a href="#"><img src="images/banner2.jpg" alt="banner image"></a>
-        </figure>
-
-        <figure class="carousel-item-itself">
-          <a href="#"><img src="images/banner3.jpg" alt="banner image"></a>
-        </figure>
-
-        <figure class="carousel-item-itself">
-          <a href="#"><img src="images/banner1.jpg" alt="banner image"></a>
-        </figure>
-
-        <figure class="carousel-item-itself">
-          <a href="#"><img src="images/banner2.jpg" alt="banner image"></a>
-        </figure>
-
-        <figure class="carousel-item-itself">
-          <a href="#"><img src="images/banner3.jpg" alt="banner image"></a>
-        </figure>
-
-        <figure class="carousel-item-itself">
-          <a href="#"><img src="images/banner4.jpg" alt="banner image"></a>
-        </figure>
-
-
+          <figure class="carousel-item-itself">
+            <a href="#"><img src="images/banner4.jpg" alt="banner image"></a>
+          </figure>
+        </div>  <!-- carousel-wraping -->
+        <a href="#"  data-icon="&#xe08f;" id="banner-prev" class="banner-rotate abs"></a>
+        <a href="#"  data-icon="&#xe092;"  id="banner-next" class="banner-rotate abs"></a>
       </section><!-- carousel-items -->
-    </div>  <!-- carousel-items -->
+
+    </div>  <!-- carousel-items-wrap -->
 <script>
-$(".carousel-items").carouFredSel({
+$("#banners").carouFredSel({
 width : "100%",
-scroll  : 2,
-items: 4
+  scroll  : {
+    items     : 1,
+    duration    : 1000,
+    timeoutDuration : 5000
+  },
+items: 4, 
+prev  : "#banner-prev",
+next  : "#banner-next"
 });
 </script>
 </div> <!-- carousel -->

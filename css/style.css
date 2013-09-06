@@ -231,7 +231,6 @@ body{
 }
 
 .carousel-items{
-	height:200px;
 	width: 100%;
 	text-align: center;
 }
@@ -249,6 +248,26 @@ body{
 
 .carousel-item-itself:hover{
 	border-color: #00c8e6;
+}
+
+.banner-rotate{
+	color: #FFFFFF;
+	font-size: 5em;
+	margin-top: -0.6em;
+	top: 50%;
+}
+
+.banner-rotate:hover{
+	color: #00c8e6;
+	text-shadow: 1px 1px 1px #949c9d;
+}
+
+#banner-prev{
+	left: -40px;
+}
+
+#banner-next{
+	right: -40px;
 }
 
 /*main content*/
