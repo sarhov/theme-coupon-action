@@ -233,7 +233,6 @@ body{
 .carousel-items{
 	height:200px;
 	width: 100%;
-	background: #ddd;
 	text-align: center;
 }
 
@@ -243,11 +242,19 @@ body{
 	height: 117px;
 	border:10px solid #cbeef5;
 	margin: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
+
+.carousel-item-itself:hover{
+	border-color: #00c8e6;
+}
+
 /*main content*/
 
 .main-sidebar{
-	width: 31.868085%;
+	width: 29.868085%;
 }
 
 .sidebar-box{
@@ -256,7 +263,6 @@ body{
 	border-radius: 4px;
 	overflow: hidden;
 	margin-bottom: 32px;
-	padding: 10px 0;
 }
 
 .main-sidebar-title{
@@ -610,7 +616,7 @@ body{
 }
 
 .main-content-wrapper{
-	width:64.918%;
+	width:66.918%;
 	height: 450px;
 	background-color: #000; /*temp*/
 	margin-left: 3.191489%;
@@ -764,7 +770,7 @@ body{
 }
 
 .main-foot-block{
-	margin-left:4.8%;
+	margin-left:6%;
 	max-width: 170px;
 }
 
