@@ -222,13 +222,27 @@ body{
 }
 
 .site-slogans{
-	padding-top: 5em;
-	padding-bottom: 5em;
+	padding-top: 9em;
+	padding-bottom: 9em;
 	color: #fff;
 	font-family: denda, serif;
 	font-size: 1em;
 	line-height: 1.5;
 }
+
+.banners-outer{
+	padding: 10px 0 5px;
+	background: rgba(255, 255, 255, 0.61);
+}
+
+.banner-title{
+	margin: 0 !important;
+	font-family: gafata, sans-serif;
+	font-size: 2em !important;
+	font-weight: normal;
+}
+
+
 
 .carousel-items{
 	width: 100%;
@@ -244,6 +258,11 @@ body{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	-webkit-transition: border-color 0.4s;
+	-moz-transition: border-color 0.4s;
+	-ms-transition: border-color 0.4s;
+	-o-transition: border-color 0.4s;
+	transition: border-color 0.4s;
 }
 
 .carousel-item-itself:hover{
@@ -284,7 +303,7 @@ body{
 	margin-bottom: 32px;
 }
 
-.main-sidebar-title{
+.main-sidebar-title, .gl-title{
 	color: #0a708d;
 	font-size: 2.69em;
 	text-transform: capitalize;
