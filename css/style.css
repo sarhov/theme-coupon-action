@@ -79,7 +79,7 @@ body{
 	width: 100%;
 	margin: 0 auto;
 	max-width: 1024px;
-	padding: 0 4.101562%;
+	padding: 0 40px;
 }
 
 .main-head-inner{
@@ -232,8 +232,18 @@ body{
 
 .carousel-items{
 	height:200px;
+	width: 100%;
+	background: #ddd;
+	text-align: center;
 }
 
+.carousel-item-itself{
+	float: left;
+	width: 220px;
+	height: 117px;
+	border:10px solid #cbeef5;
+	margin: 10px;
+}
 /*main content*/
 
 .main-sidebar{
