@@ -585,7 +585,7 @@ body{
 }
 
 .social-buttons-item:active:before{
-	bottom:-44px; /*prevent share count's moving*/
+	bottom:-36px; /*prevent share count's moving*/
 }
 
 .social-buttons-item:before {
@@ -798,7 +798,7 @@ body{
 .main-foot{
 	background-color: #1ee2ff;
 	 border-top: 2px dotted #FFFFFF;
-	 padding:2.5em  0 0 2em;
+	 padding:2.5em  2em;
 	 font-family: gafata, sans-serif;
 }
 
@@ -825,16 +825,50 @@ body{
 
 /*post footer*/
 
-.post-foot-box{
-	height: 100px;/*temp*/
-	background: #eee; /*temp*/
-}
-
 .post-foot-social{
 	width: 30.319149%;
-	height: 60px;
+	text-align: right;
+}
+
+.post-foot-social .social-buttons-item:before, .post-foot-social .social-buttons-item:after{
+	width: 0;
+	height: 0;
+	padding: 0;
+	margin: 0;
+	border:none;
+}
+
+.post-foot-social .social-buttons-item{
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 70%;
+	height: 40px;
+	margin-left: 2px;
+	padding: 8px 0;
+	text-align: center;
+	width: 40px;
+}
+
+.post-foot-nav{
+	margin-bottom: 0.88em;
+}
+
+.post-foot-nav-item{
+	font-size:1.13em;
+	color:#fff;
+	margin-right: 1.67em;
+}
+
+.post-foot-nav-item:hover{
+	color: #0A7F9E;
 }
 
 .copyrights, .post-foot-nav{
 	width: 69.680851%;
+}
+
+.copyrights {
+	color: #0093a9;
+	font-size: 1em;
+	font-family: gafata, serif;
 }
