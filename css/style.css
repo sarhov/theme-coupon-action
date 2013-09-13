@@ -314,7 +314,6 @@ body{
 .main-sidebar-navigation{
 	padding: 0;
 	background: #e4f7fa;
-
 	border-radius: 3px;
 	font-family: gafata, sans-serif;
 
@@ -339,10 +338,14 @@ body{
 	border-top:#266577 ;
 	font-size:1.19em ;  /*19/16*/
 	text-transform: capitalize;
-	padding: 0.79em 0;  /*15/19*/
+	padding: 0.85em 0;  /*15/19*/
 	padding-left:50px ;
 	display: block;
 	width: 100%;
+}
+
+.main-sidebar-navigation-item:first-child .msni-link{
+	padding-top: 1.1em;
 }
 
 .msnim-opener-wrap{
@@ -438,8 +441,8 @@ body{
 }
 
 .coupon-submit-button:active{
-		background: #00bad6;
-		-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #a2f3ff;
+	background: #00bad6;
+	-webkit-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #a2f3ff;
 	-moz-box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #a2f3ff;
 	box-shadow: 0 1px 0px #5e2563, inset 0 2px 0px #a2f3ff;
 }
@@ -667,11 +670,35 @@ body{
 
 .main-content-see-all:hover{
 	color: #0A708D;
+	
+}
+
+.main-content-sorting{
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	overflow: hidden;
+	background: #E4F7FA;
 }
 
 .main-content-sorting-item{
-	width: 25%;
+	color: #00C8E6;
+	cursor: pointer;
+	font-size: 1.38em;
+	padding: 0.75em 1.36em;
 	text-align: center;
+	text-shadow: -1px -1px 1px #AFE8F3;
+}
+
+.main-content-sorting-item.active,.main-content-sorting-item.active:hover{
+	background: #1ee2ff;
+	color: #fff;
+}
+
+
+
+.main-content-sorting-item:hover{
+	background: #c7f3fc;
 }
 
 /*pre footer*/
