@@ -86,7 +86,7 @@ body{
 	color: #0a708d;
 	font-size: 2.69em;
 	text-transform: capitalize;
-	margin: 0 0 10px 0;
+	margin: 0 0 15px 0;
 	font-family: denda, serif;
 	text-shadow: 1px 1px 1px #C4D3D5, 2px 2px 1px #C4D3D5;
 }
@@ -655,9 +655,23 @@ body{
 
 .main-content-wrapper{
 	width:66.918%;
-	height: 450px;
-	background-color: #000; /*temp*/
 	margin-left: 3.191489%;
+	font-family: gafata, serif;
+}
+
+.main-content-see-all{
+	margin-top: 18px;
+	color: #5690a5;
+	font-size: 1.19em;
+}
+
+.main-content-see-all:hover{
+	color: #0A708D;
+}
+
+.main-content-sorting-item{
+	width: 25%;
+	text-align: center;
 }
 
 /*pre footer*/
