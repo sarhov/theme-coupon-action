@@ -701,12 +701,54 @@ body{
 	background: #c7f3fc;
 }
 
-.content-item-box{
-	width: 300px;
-	height: 307px;
-	background: #333;
+.content-items-wrapper{
+	width: 110%;
+	margin-top: 20px;
+}
+
+.shifty-item{
 	float: left;
-    margin: 5px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    width: 307px;
+	height: 307px;
+	padding-top:10px ;
+}
+
+.content-item-box{
+	background: #aae9f3;
+	height: 100%;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 1;
+    top: 2px;
+    left: 0;
+}
+
+.content-item-box-stamp{
+	background: none repeat scroll 0 0 #99CC00;
+	border-radius: 0 0 3px 3px;
+	font-size: 22px;
+	padding: 10px 0;
+	position: absolute;
+	text-align: center;
+	top: -2px;
+	width: 37px;
+	z-index: 2;
+	color: #fff;
+}
+
+.stamp-fb{
+	left: 25px;
+}
+
+.stamp-tw{
+	left: 70px;
+}
+
+.stamp-like{
+	right: 25px;
 }
 
 .size2{

@@ -22,14 +22,44 @@
     <script src="js/functions.js"></script>
     </head>
     <body>
-
+ <script>
+$(function() {
+var availableTags = [
+"ActionScript",
+"AppleScript",
+"Asp",
+"BASIC",
+"C",
+"C++",
+"Clojure",
+"COBOL",
+"ColdFusion",
+"Erlang",
+"Fortran",
+"Groovy",
+"Haskell",
+"Java",
+"JavaScript",
+"Lisp",
+"Perl",
+"PHP",
+"Python",
+"Ruby",
+"Scala",
+"Scheme"
+];
+$( "#tags" ).autocomplete({
+source: availableTags
+});
+});
+</script>
 <header class="main-head rel global-outer">
 
     <div class="global-inner ">
         <div class="search-wrap cf">
         <form method="get" action="search.php">
                <div class="search-box-input search-box fl">
-                   <input type="search" class="search-box-input-itself">
+                   <input id="tags" type="search" class="search-box-input-itself">
                </div>  <!-- search-box-input -->
                <div class="search-box search-box-cat fl">
                    <div class="select-cat-wrap" data-icon="&#xe0f4;">
@@ -294,180 +324,213 @@ next  : "#banner-next"
        <div class="content-items-wrapper">
          <section class="content-items" id="container">
 
-           <article class="content-item-box shifty-item boxone">
-             <span href="#" class="clicker">fdfdfdfd</span>
-          
-             <div class="comments" style="display:none; width:150px; background:#9c0;">
-               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui, asperiores, nobis officiis aspernatur dolore sunt vel excepturi ipsum illo nesciunt aliquid minus assumenda quidem reiciendis perferendis voluptatibus illum necessitatibus laudantium ullam similique blanditiis velit quibusdam fuga accusamus consequuntur optio dicta debitis quas laborum voluptate. Culpa, quasi odit mollitia aperiam dignissimos eius rem esse veritatis ad earum neque cupiditate optio distinctio quae amet ipsam alias hic. Nam, libero, aspernatur! Totam, voluptatibus, laudantium quasi assumenda laboriosam consequatur tempora deleniti ipsa ex perspiciatis velit animi temporibus magni illum nulla ullam tempore reiciendis distinctio aspernatur a sint repellendus alias aut culpa error quae dolorum.
-             </div>
-           </article>
+          <div class="shifty-item">
+          <article class="content-item-box boxone rel">
+            <a href="#" data-icon="&#xe104;" class="content-item-box-stamp abs  stamp-fb"></a>
+            <a href="#" data-icon="&#xe105;" class="content-item-box-stamp abs  stamp-tw"></a>
+            <a href="#" data-icon="&#xe0ca;" class="content-item-box-stamp abs  stamp-like"></a>
+          </article>
 
-
-           <article class="content-item-box shifty-item size2">
-             
-           </article>
-
-
-           <article class="content-item-box shifty-item size3">
-             
-           </article>
-
-
-           <article class="content-item-box shifty-item size 4">
-             
-           </article>
-
-
-           <article class="content-item-box shifty-item">
-             
-           </article>
-
-         </section> <!-- #container -->
+         </div> <!-- shifty-item --> 
+        </section> <!-- #container -->
 
 
 <script>
 
 
   // -------------------------- Masonry Column Shift -------------------------- //
-  
-  // custom layout mode
-  $.Isotope.prototype._masonryColumnShiftReset = function() {
-    // layout-specific props
-    var props = this.masonryColumnShift = {
-      columnBricks: []
+ // custom layout mode
+ $.Isotope.prototype._masonryColumnShiftReset = function () {
+     // layout-specific props
+     var props = this.masonryColumnShift = {
+         columnBricks: []
+     };
+     // FIXME shouldn't have to call this again
+     this._getSegments();
+     var i = props.cols;
+     props.colYs = [];
+     while (i--) {
+         props.colYs.push(0);
+         // push an array, for bricks in each column
+         props.columnBricks.push([])
+     }
+ };
+
+ $.Isotope.prototype._masonryColumnShiftLayout = function ($elems) {
+     var instance = this,
+         props = instance.masonryColumnShift;
+     $elems.each(function () {
+         var $brick = $(this);
+         var setY = props.colYs;
+
+         // get the minimum Y value from the columns
+         var minimumY = Math.min.apply(Math, setY),
+             shortCol = 0;
+
+         // Find index of short column, the first from the left
+         for (var i = 0, len = setY.length; i < len; i++) {
+             if (setY[i] === minimumY) {
+                 shortCol = i;
+                 break;
+             }
+         }
+
+         // position the brick
+         var x = props.columnWidth * shortCol,
+             y = minimumY;
+         instance._pushPosition($brick, x, y);
+         // keep track of columnIndex
+         $.data(this, 'masonryColumnIndex', i);
+         props.columnBricks[i].push(this);
+
+         // apply setHeight to necessary columns
+         var setHeight = minimumY + $brick.outerHeight(true),
+             setSpan = props.cols + 1 - len;
+         for (i = 0; i < setSpan; i++) {
+             props.colYs[shortCol + i] = setHeight;
+         }
+
+     });
+ };
+
+ $.Isotope.prototype._masonryColumnShiftGetContainerSize = function () {
+     var containerHeight = Math.max.apply(Math, this.masonryColumnShift.colYs);
+     return {
+         height: containerHeight
+     };
+ };
+
+ $.Isotope.prototype._masonryColumnShiftResizeChanged = function () {
+     return this._checkIfSegmentsChanged();
+ };
+
+ $.Isotope.prototype.shiftColumnOfItem = function (itemElem, callback) {
+
+     var columnIndex = $.data(itemElem, 'masonryColumnIndex');
+
+     // don't proceed if no columnIndex
+     if (!isFinite(columnIndex)) {
+         return;
+     }
+
+     var props = this.masonryColumnShift;
+     var columnBricks = props.columnBricks[columnIndex];
+     var $brick;
+     var x = props.columnWidth * columnIndex;
+     var y = 0;
+     for (var i = 0, len = columnBricks.length; i < len; i++) {
+         $brick = $(columnBricks[i]);
+         this._pushPosition($brick, x, y);
+         y += $brick.outerHeight(true);
+     }
+
+     // set the size of the container
+     if (this.options.resizesContainer) {
+         var containerStyle = this._masonryColumnShiftGetContainerSize();
+         containerStyle.height = Math.max(y, containerStyle.height);
+         this.styleQueue.push({
+             $el: this.element,
+             style: containerStyle
+         });
+     }
+
+     this._processStyleQueue($(columnBricks), callback)
+
+ };
+
+ $(function () {
+
+     var $container = $('#container');
+
+     $container.isotope({
+         itemSelector: '.shifty-item',
+         layoutMode: 'masonryColumnShift'
+     });
+
+
+
+     $('.clicker').click(
+
+         function () {
+             $(this).toggleClass('minusik');
+             var boxing = $(this).closest('.content-item-box');
+             var hehe = $('.comments').height();
+             $('.comments').toggleClass('shower');
+             if ($(this).hasClass('minusik')) {
+
+                 $(boxing).height($(boxing).height() + hehe);
+                 $container.isotope('shiftColumnOfItem', boxing[0]);
+
+             } else {
+                 $(boxing).height($(boxing).height() - hehe);
+                 $('#container').isotope('shiftColumnOfItem', boxing[0]);
+             }
+         }
+     );
+ });
+</script>
+<script type="text/javascript">
+$.Isotope.prototype._getCenteredMasonryColumns = function() {
+
+    this.width = this.element.width();
+
+    var parentWidth = this.element.parent().width();
+
+    var colW = this.options.masonry && this.options.masonry.columnWidth || // i.e. options.masonry && options.masonry.columnWidth
+
+    this.$filteredAtoms.outerWidth(true) || // or use the size of the first item
+
+    parentWidth; // if there's no items, use size of container
+
+    var cols = Math.floor(parentWidth / colW);
+
+    cols = Math.max(cols, 1);
+
+    this.masonry.cols = cols; // i.e. this.masonry.cols = ....
+    this.masonry.columnWidth = colW; // i.e. this.masonry.columnWidth = ...
+};
+
+$.Isotope.prototype._masonryReset = function() {
+
+    this.masonry = {}; // layout-specific props
+    this._getCenteredMasonryColumns(); // FIXME shouldn't have to call this again
+
+    var i = this.masonry.cols;
+
+    this.masonry.colYs = [];
+        while (i--) {
+        this.masonry.colYs.push(0);
+    }
+};
+
+$.Isotope.prototype._masonryResizeChanged = function() {
+
+    var prevColCount = this.masonry.cols;
+
+    this._getCenteredMasonryColumns(); // get updated colCount
+    return (this.masonry.cols !== prevColCount);
+};
+
+$.Isotope.prototype._masonryGetContainerSize = function() {
+
+    var unusedCols = 0,
+
+    i = this.masonry.cols;
+        while (--i) { // count unused columns
+        if (this.masonry.colYs[i] !== 0) {
+            break;
+        }
+        unusedCols++;
+    }
+
+    return {
+        height: Math.max.apply(Math, this.masonry.colYs),
+        width: (this.masonry.cols - unusedCols) * this.masonry.columnWidth // fit container to columns that have been used;
     };
-    // FIXME shouldn't have to call this again
-    this._getSegments();
-    var i = props.cols;
-    props.colYs = [];
-    while (i--) {
-      props.colYs.push( 0 );
-      // push an array, for bricks in each column
-      props.columnBricks.push([])
-    }
-  };
-  
-  $.Isotope.prototype._masonryColumnShiftLayout = function( $elems ) {
-    var instance = this,
-        props = instance.masonryColumnShift;
-    $elems.each(function(){
-      var $brick = $(this);
-      var setY = props.colYs;
-
-      // get the minimum Y value from the columns
-      var minimumY = Math.min.apply( Math, setY ),
-          shortCol = 0;
-
-      // Find index of short column, the first from the left
-      for (var i=0, len = setY.length; i < len; i++) {
-        if ( setY[i] === minimumY ) {
-          shortCol = i;
-          break;
-        }
-      }
-
-      // position the brick
-      var x = props.columnWidth * shortCol,
-          y = minimumY;
-      instance._pushPosition( $brick, x, y );
-      // keep track of columnIndex
-      $.data( this, 'masonryColumnIndex', i );
-      props.columnBricks[i].push( this );
-
-      // apply setHeight to necessary columns
-      var setHeight = minimumY + $brick.outerHeight(true),
-          setSpan = props.cols + 1 - len;
-      for ( i=0; i < setSpan; i++ ) {
-        props.colYs[ shortCol + i ] = setHeight;
-      }
-
-    });
-  };
-  
- $.Isotope.prototype._masonryColumnShiftGetContainerSize = function() {
-    var containerHeight = Math.max.apply( Math, this.masonryColumnShift.colYs );
-    return { height: containerHeight };
-  };
-
-  $.Isotope.prototype._masonryColumnShiftResizeChanged = function() {
-    return this._checkIfSegmentsChanged();
-  };
-  
-  $.Isotope.prototype.shiftColumnOfItem = function( itemElem, callback ) {
-    
-    var columnIndex = $.data( itemElem, 'masonryColumnIndex' );
-    
-    // don't proceed if no columnIndex
-    if ( !isFinite(columnIndex) ) {
-      return;
-    }
-
-    var props = this.masonryColumnShift;
-    var columnBricks = props.columnBricks[ columnIndex ];
-    var $brick;
-    var x = props.columnWidth * columnIndex;
-    var y = 0;
-    for (var i=0, len = columnBricks.length; i < len; i++) {
-      $brick = $( columnBricks[i] );
-      this._pushPosition( $brick, x, y );
-      y += $brick.outerHeight(true);
-    }
-
-    // set the size of the container
-    if ( this.options.resizesContainer ) {
-      var containerStyle = this._masonryColumnShiftGetContainerSize();
-      containerStyle.height = Math.max( y, containerStyle.height );
-      this.styleQueue.push({ $el: this.element, style: containerStyle });
-    }
-
-    this._processStyleQueue( $(columnBricks), callback )
-
-  };
-
-        $(function(){
-
-        var $container = $('#container');
-
-        $container.isotope({
-        itemSelector: '.shifty-item',
-        layoutMode: 'masonryColumnShift'
-        });
-
-
-
- $('.clicker').click(
-
-        function() {
-        $(this).toggleClass('minusik');
-        var boxing = $(this).closest('.content-item-box');
-        var hehe =$('.comments').height();
-        $('.comments').toggleClass('shower');
-        if ($(this).hasClass('minusik')) {
-        
-        $(boxing).height($(boxing).height()+hehe);
-        $container.isotope( 'shiftColumnOfItem', boxing[0] );
-
-        }
-        else{
-        
-
-        $(boxing).height($(boxing).height()-hehe);
-       $('#container').isotope( 'shiftColumnOfItem', boxing[0] );
-        }
-
-        }
-
-
-
-        );
-
-        
-
-        });
+};
 </script>
 
-
-       </div>
+       </div> <!-- content-items-wrapper -->
      </section> <!-- content-wrapper -->
    </div>  <!-- main-content-centered -->
 </div> <!-- content-wrapper-inner -->
