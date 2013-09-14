@@ -741,14 +741,20 @@ body{
 
 .stamp-fb{
 	left: 25px;
+	background: #9fc5e6;
+	-webkit-box-shadow: 0 2px 1px #739fc6;
+	-moz-box-shadow: 0 2px 1px #739fc6;
+	box-shadow: 0 2px 1px #739fc6;
 }
 
 .stamp-tw{
 	left: 70px;
+	background: #74dafb;
 }
 
 .stamp-like{
 	right: 25px;
+	background: #9fc5e6;
 }
 
 .size2{
