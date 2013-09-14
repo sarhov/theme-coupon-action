@@ -709,7 +709,7 @@ body{
 .shifty-item{
 	float: left;
     margin-right: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 307px;
 	height: 307px;
 	padding-top:10px ;
@@ -742,19 +742,25 @@ body{
 .stamp-fb{
 	left: 25px;
 	background: #9fc5e6;
-	-webkit-box-shadow: 0 2px 1px #739fc6;
-	-moz-box-shadow: 0 2px 1px #739fc6;
-	box-shadow: 0 2px 1px #739fc6;
+	-webkit-box-shadow: 0 2px 0 #739fc6;
+	-moz-box-shadow: 0 2px 0 #739fc6;
+	box-shadow: 0 2px 0 #739fc6;
 }
 
 .stamp-tw{
 	left: 70px;
 	background: #74dafb;
+	-webkit-box-shadow: 0 2px 0 #4fbde1;
+	-moz-box-shadow: 0 2px 0 #4fbde1;
+	box-shadow: 0 2px 0 #4fbde1;
 }
 
 .stamp-like{
 	right: 25px;
 	background: #9fc5e6;
+	-webkit-box-shadow: 0 2px 0 #4ebdce;
+	-moz-box-shadow: 0 2px 0 #4ebdce;
+	box-shadow: 0 2px 0 #4ebdce;
 }
 
 .size2{
