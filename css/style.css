@@ -701,6 +701,30 @@ body{
 	background: #c7f3fc;
 }
 
+.content-item-box{
+	width: 300px;
+	height: 307px;
+	background: #333;
+	float: left;
+    margin: 5px;
+}
+
+.size2{
+	height: 200px;
+}
+
+.shower{
+	display: block !important;
+}
+
+.size3{
+	height: 400px;
+}
+
+.size4, .plusik{
+	height: 500px;
+}
+
 /*pre footer*/
 
 .pre-footer{
