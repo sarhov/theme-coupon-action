@@ -458,7 +458,7 @@ body{
     font-size: 0.8em;
     height: 17px;
     width: 17px;
-    padding: 2px 3px 3px;
+    padding: 3px 3px 3px 2px;
     box-shadow: 0 1px 1px 1px #EBE1D4 inset;
     margin-right: 5px;
     -webkit-transition: all 0.4s;
@@ -711,7 +711,6 @@ body{
     margin-right: 15px;
     margin-bottom: 10px;
     width: 307px;
-	height: 307px;
 	padding-top:10px ;
 }
 
@@ -724,6 +723,7 @@ body{
     z-index: 1;
     top: 2px;
     left: 0;
+    padding: 70px 25px 25px 25px;
 }
 
 .content-item-box-stamp{
@@ -761,6 +761,23 @@ body{
 	-webkit-box-shadow: 0 2px 0 #4ebdce;
 	-moz-box-shadow: 0 2px 0 #4ebdce;
 	box-shadow: 0 2px 0 #4ebdce;
+}
+
+.content-item-big-title{
+	margin: 0;
+	font:6.25em denda-bold, sans-serif;
+	text-align: center;
+	color: #fff;
+	line-height: 0.8;
+}
+
+.content-item-main-title{
+	font: 1.38em denda, sans-serif;
+}
+
+.content-item-excerpt{
+	font: 0.88em tahoma, sans-serif;
+	color: #467b85;
 }
 
 .size2{
