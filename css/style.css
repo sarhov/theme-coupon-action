@@ -986,6 +986,39 @@ body{
 	font-family: 'PT sans', sans-serif;
 }
 
+.comment-item{
+	padding:0.6em 0 0.8em;
+	border-top: 1px solid #aae9f3;
+}
+
+.comment-item:first-child{
+	border: none;
+	padding-top: 0;
+}
+
+.comment-item-details{
+	font-size: 1em;
+	color: #2dc2d8;
+	margin-bottom: 0.5em;
+
+}
+
+.comment-item-text{
+	margin: 0;
+	font: 0.75em Arial, sans-serif;
+	color: #758e92;
+}
+
+.comment-list-more-comments{
+	font-family: 'PT sans', sans-serif;
+	font-size: 0.75em;
+	text-align: center;
+}
+
+.comment-list-more-url{
+	color: #2dc2d8;
+}
+
 /*pre footer*/
 
 .pre-footer{
