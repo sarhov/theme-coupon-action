@@ -935,12 +935,13 @@ body{
 .content-item-popup{
 	background: #fffbef;
 	padding: 1.25em;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
-	border-radius: 2px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
 }
 
-.content-item-popup:before{
+
+.popup-comments:before{
 	border-color: transparent transparent #FFFBEF;
 	border-style: solid;
 	border-width: 14px 10px;
@@ -951,6 +952,36 @@ body{
 	top: -24px;
 	width: 0;
 }
+
+.popup-get-code:before{
+	border-color: transparent transparent #FFFBEF;
+	border-style: solid;
+	border-width: 14px 10px;
+	content: "";
+	height: 0;
+	position: absolute;
+	left: 52px;
+	top: -24px;
+	width: 0;
+}
+
+.content-item-popup-closer{
+	background: none repeat scroll 0 0 #eabcbb;
+	border-radius: 50% 50% 50% 50%;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 12px;
+	padding: 1px 4px 2px 5px;
+	text-align: center;
+	right: -7px;
+	top: -7px;
+}
+
+.content-item-popup-closer:hover{
+	opacity: 0.8;
+}
+
+
 
 /*pre footer*/
 
