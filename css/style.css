@@ -984,6 +984,7 @@ body{
 
 .comments-list{
 	font-family: 'PT sans', sans-serif;
+	margin-bottom: 20px;
 }
 
 .comment-item{
@@ -1011,12 +1012,28 @@ body{
 
 .comment-list-more-comments{
 	font-family: 'PT sans', sans-serif;
-	font-size: 0.75em;
+	font-size: 0.88em;
 	text-align: center;
 }
 
 .comment-list-more-url{
 	color: #2dc2d8;
+}
+
+.comment-list-add-comment-wrapper{
+	text-align: center;
+}
+
+.comment-list-add-comment{
+	width: 100%;
+	background: #ffc548;
+	color: #fff;
+	padding: 0.25em 0;
+	display: block;
+	font: 1.25em denda, serif;
+	-webkit-box-shadow: 0 2px 0 #d69728;
+	-moz-box-shadow: 0 2px 0 #d69728;
+	box-shadow: 0 2px 0 #d69728;
 }
 
 /*pre footer*/
