@@ -424,6 +424,7 @@ body{
 
 #submit-comment{
 	height: 150px;
+	resize:none;
 }
 
 .coupon-submit-button{
@@ -1044,6 +1045,10 @@ body{
 	-webkit-box-shadow: 0 2px 0 #d69728;
 	-moz-box-shadow: 0 2px 0 #d69728;
 	box-shadow: 0 2px 0 #d69728;
+}
+
+.add-comment-textarea{
+	margin-bottom: 10px;
 }
 
 /*pre footer*/
