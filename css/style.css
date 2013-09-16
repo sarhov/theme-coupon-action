@@ -739,6 +739,10 @@ body{
 	color: #fff;
 }
 
+.content-item-box-stamp:hover{
+	opacity: 0.9;
+}
+
 .stamp-fb{
 	left: 25px;
 	background: #9fc5e6;
@@ -761,6 +765,13 @@ body{
 	-webkit-box-shadow: 0 2px 0 #4ebdce;
 	-moz-box-shadow: 0 2px 0 #4ebdce;
 	box-shadow: 0 2px 0 #4ebdce;
+}
+
+.stamp-like.liked{
+	background: #e57474;
+	-webkit-box-shadow: 0 2px 0 #bc5050;
+	-moz-box-shadow: 0 2px 0 #bc5050;
+	box-shadow: 0 2px 0 #bc5050;
 }
 
 .content-item-big-title{
@@ -848,6 +859,20 @@ body{
 	box-shadow: 0 2px 0 #74cedc;
 }
 
+
+.button-get-code:hover{
+	background: #f3fdfe;
+}
+
+
+.button-get-code:active{
+	background: #56c6d7;
+	color: #fff;
+	-webkit-box-shadow: 0 1px 0px #238898, inset 0 2px 0px #b182b5;
+	-moz-box-shadow: 0 1px 0px #238898, inset 0 2px 0px #b182b5;
+	box-shadow: 0 1px 0px #238898, inset 0 2px 0px #b182b5;
+}
+
 .button-comments{
 	background: #55d8ec;
 	padding-right: 45px;
@@ -865,6 +890,28 @@ body{
 	-webkit-box-shadow: 0 2px 0 #12abc2;
 	-moz-box-shadow: 0 2px 0 #12abc2;
 	box-shadow: 0 2px 0 #12abc2;
+}
+
+.button-comments:hover{
+	background: #5adff3;
+}
+
+.button-comments:hover .button-comments-count{
+	background: #2dd0e8;
+}
+
+.button-comments:active{
+	background: #11a1b7;
+	-webkit-box-shadow: 0 1px 0px #06505b, inset 0 2px 0px #5adff3;
+	-moz-box-shadow: 0 1px 0px #06505b, inset 0 2px 0px #5adff3;
+	box-shadow: 0 1px 0px #06505b, inset 0 2px 0px #5adff3;
+}
+
+.button-comments:active .button-comments-count{
+	background: #078598
+		-webkit-box-shadow: inset 0 2px 0px #5adff3;
+	-moz-box-shadow: inset 0 2px 0px #5adff3;
+	box-shadow: inset 0 2px 0px #5adff3;
 }
 
 .size2{
@@ -897,8 +944,6 @@ body{
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
-
-
 
 .pre-footer-big-block-title{
 	font-family: denda-bold, serif;
