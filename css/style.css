@@ -706,13 +706,22 @@ body{
 	margin-top: 20px;
 }
 
-.shifty-item{
+#container, #container2{
+	margin-bottom: 20px;
+}
+
+.shifty-item, .shifty-item2{
 	float: left;
     margin-right: 15px;
     margin-bottom: 10px;
     width: 307px;
 	padding-top:10px ;
 }
+
+.see-all2{
+	margin-right: 10%;
+}
+
 
 .content-item-box{
 	background: #aae9f3;
@@ -876,6 +885,11 @@ body{
 .button-comments{
 	background: #55d8ec;
 	padding-right: 45px;
+}
+
+.button-comments2{
+	width: 100%;
+	text-align: center;
 }
 
 .button-comments-count{

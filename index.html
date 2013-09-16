@@ -774,10 +774,122 @@ next  : "#banner-next"
             </article>
          </div> <!-- shifty-item --> 
 
+
         </section> <!-- #container -->
 
 
+        <h1 class="main-content-title  fl gl-title">Popular Stores</h1>
+         <a href="#" class="main-content-see-all fr see-all2">all stores</a>
+        <div id="container2" class="cb">
 
+          <div class="shifty-item2">
+            <article class="content-item-box boxone rel cf">
+              <a href="#" data-icon="&#xe104;" class="content-item-box-stamp abs  stamp-fb"></a>
+              <a href="#" data-icon="&#xe105;" class="content-item-box-stamp abs  stamp-tw"></a>
+              <a href="#" data-icon="&#xe005;" class="content-item-box-stamp abs  stamp-like"></a>              
+              <h1 class="content-item-main-title">
+                $5 Shipping No Minimum
+              </h1>  <!-- content-item-main-title -->
+              <div class="content-item-excerpt">
+               <a href=""><img src="http://lorempixel.com/370/200/1" alt=""></a>
+              </div> <!-- content-item-excerpt -->
+              <div class="content-item-rating">
+                <img alt="temp" title="temp" src="https://lh3.googleusercontent.com/-vv1zho2RcHQ/UjbI5Ax0n2I/AAAAAAAAACA/_VW7ObPWDe0/s0/2013-09-16_13-01-07.png" alt="">
+              </div>
+
+
+            <div class="content-item-info-wrapper">
+                <div class="content-item-info cf rel">
+                  <strong class="fl content-item-info-text info-strong">
+                    Expire
+                  </strong>
+                  <span class="fr content-item-info-text info-span">
+                    30 December, 2013
+                  </span>
+                </div> <!-- content-item-info -->
+               
+                <div class="content-item-info cf rel">
+                  <strong class="fl content-item-info-text info-strong">
+                    Store
+                  </strong>
+                  <span class="fr content-item-info-text info-span">
+                    Bass Pro Shops 
+                  </span>
+                </div> <!-- content-item-info -->
+    
+                <div class="content-item-info cf rel">
+                  <strong class="fl content-item-info-text info-strong">
+                    Category
+                  </strong>
+                  <span class="fr content-item-info-text info-span">
+                    Clothing & Accessories
+                  </span>
+                </div> <!-- content-item-info -->
+
+              </div>  <!-- content-item-info-wrapper -->
+            
+            <div class="content-item-buttons rel">
+              <a href="#" class="g-button button-comments content-item-button fl button-comments2">Testimonials <span class="button-comments-count">12</span></a>
+            </div>
+
+            </article>
+         </div> <!-- shifty-item2 --> 
+         
+          <div class="shifty-item2">
+             <article class="content-item-box boxone rel cf">
+              <a href="#" data-icon="&#xe104;" class="content-item-box-stamp abs  stamp-fb"></a>
+              <a href="#" data-icon="&#xe105;" class="content-item-box-stamp abs  stamp-tw"></a>
+              <a href="#" data-icon="&#xe005;" class="content-item-box-stamp abs  stamp-like"></a>              
+              <h1 class="content-item-main-title">
+                  80% Off Dragonfly Pendant 
+                with Sky and Meadow 
+                Swarovski Crystal in 
+                Sterling Silver
+              </h1>  <!-- content-item-main-title -->
+              <div class="content-item-excerpt">
+               <a href=""><img src="http://lorempixel.com/370/300/2" alt=""></a>
+              </div> <!-- content-item-excerpt -->
+              <div class="content-item-rating">
+                <img alt="temp" title="temp" src="https://lh3.googleusercontent.com/-vv1zho2RcHQ/UjbI5Ax0n2I/AAAAAAAAACA/_VW7ObPWDe0/s0/2013-09-16_13-01-07.png" alt="">
+              </div>
+            <div class="content-item-info-wrapper">
+                <div class="content-item-info cf rel">
+                  <strong class="fl content-item-info-text info-strong">
+                    Expire
+                  </strong>
+                  <span class="fr content-item-info-text info-span">
+                    30 December, 2013
+                  </span>
+                </div> <!-- content-item-info -->
+               
+                <div class="content-item-info cf rel">
+                  <strong class="fl content-item-info-text info-strong">
+                    Store
+                  </strong>
+                  <span class="fr content-item-info-text info-span">
+                    Bass Pro Shops 
+                  </span>
+                </div> <!-- content-item-info -->
+    
+                <div class="content-item-info cf rel">
+                  <strong class="fl content-item-info-text info-strong">
+                    Category
+                  </strong>
+                  <span class="fr content-item-info-text info-span">
+                    Clothing & Accessories
+                  </span>
+                </div> <!-- content-item-info -->
+
+              </div>  <!-- content-item-info-wrapper -->
+            
+            <div class="content-item-buttons rel">
+              <a href="#" class="g-button button-comments content-item-button fl button-comments2">Testimonials <span class="button-comments-count">12</span></a>
+            </div>
+
+            </article>
+         </div> <!-- shifty-item2 -->
+
+        </div> <!-- #container2 -->
 
        </div> <!-- content-items-wrapper -->
      </section> <!-- content-wrapper -->
@@ -1071,6 +1183,38 @@ next  : "#banner-next"
          }
      );
  });
+
+ $(function () {
+
+     var $container = $('#container2');
+
+     $container.isotope({
+         itemSelector: '.shifty-item2',
+         layoutMode: 'masonryColumnShift'
+     });
+
+
+
+     $('.clicker').click(
+
+         function () {
+             $(this).toggleClass('minusik');
+             var boxing = $(this).closest('.content-item-box');
+             var hehe = $('.comments').height();
+             $('.comments').toggleClass('shower');
+             if ($(this).hasClass('minusik')) {
+
+                 $(boxing).height($(boxing).height() + hehe);
+                 $container.isotope('shiftColumnOfItem', boxing[0]);
+
+             } else {
+                 $(boxing).height($(boxing).height() - hehe);
+                 $('#container').isotope('shiftColumnOfItem', boxing[0]);
+             }
+         }
+     );
+ });
+
 </script>
 <script type="text/javascript">
 $.Isotope.prototype._getCenteredMasonryColumns = function() {
