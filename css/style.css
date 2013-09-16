@@ -981,6 +981,16 @@ body{
 	opacity: 0.8;
 }
 
+.popup-get-code{
+	padding: 0.7em 0;
+}
+
+.content-item-code{
+	text-align: center;
+	text-transform: uppercase;
+	font:1em arial, sans-serif;
+	color: #758e92;
+}
 
 .comments-list{
 	font-family: 'PT sans', sans-serif;
@@ -1001,7 +1011,7 @@ body{
 	font-size: 1em;
 	color: #2dc2d8;
 	margin-bottom: 0.5em;
-
+	display: block;
 }
 
 .comment-item-text{
