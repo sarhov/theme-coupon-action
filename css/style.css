@@ -184,6 +184,9 @@ body{
 	-moz-box-shadow: inset 0 3px 2px rgba(60,60,60,.13);
 	box-shadow: inset 0 3px 2px rgba(60, 60, 60, 0.13);
 	position: relative;
+	color: #266577;
+	font-family: Arial, sans-serif;
+	font-size: 0.88em;
 }
 
 .select-cat-wrap:before{
@@ -192,10 +195,11 @@ body{
 	box-shadow: 0 0 4px 1px #DDDDDD;
 	color: #FFFFFF;
 	float: right;
-	padding: 1px 10px 9px;
+	font-size: 20px;
+	padding: 1px 10px 8px;
 	position: absolute;
 	right: 4px;
-	top: 5px;
+	top: 4px;
 	z-index: 52;
 }
 
@@ -1273,10 +1277,10 @@ body{
  
 	.selecter-element { *left: -999999px; position: absolute; opacity: 0; }
 	.selecter { display: block;  position: relative; max-width: 100%; z-index: 52; }
-	.selecter .selecter-selected { color: #333; cursor: pointer; display: block; font-size: 13px; margin: 0; overflow: hidden; padding: 10px; position: relative; text-overflow: clip; z-index: 49; }
+	.selecter .selecter-selected {  cursor: pointer; display: block;  margin: 0; overflow: hidden; padding: 8px 7px 7px; position: relative; text-overflow: clip; z-index: 49; }
 	.selecter .selecter-options { border: 1px solid #ccc; border-width: 0 1px 1px; background-color: #fefefe; border-radius: 0 0 3px 3px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15); display: none; left: 0; margin: 0; max-height: 260px; overflow: auto; overflow: hidden; padding: 0; position: absolute; top: 102%; width: 100%; *width: auto; z-index: 50; }
 	.selecter .selecter-group { background: #F9F9F9; border-bottom: 1px solid #e3e3e3; color: #999; display: block; font-size: 11px; padding: 5px 10px 4px; text-transform: uppercase; }
-	.selecter .selecter-item { background: #fff; border-bottom: 1px solid #e3e3e3; color: #333; cursor: pointer; display: block; font-size: 13px; margin: 0; overflow: hidden; padding: 8px 10px; text-overflow: ellipsis; width: 100%; }
+	.selecter .selecter-item { background: #fff;cursor: pointer; display: block;  margin: 0; overflow: hidden; padding: 8px 10px; text-overflow: ellipsis; width: 100%; }
 	.selecter .selecter-item.selected { background: #F9F9F9; }
 	.selecter .selecter-item.disabled { color: #999; cursor: default; }
 	.selecter .selecter-item.first { border-radius: 0; } 
@@ -1284,7 +1288,7 @@ body{
 	
 	@media screen and (min-width: 740px) {
 		.selecter .selecter-item:hover, 
-		.selecter .selecter-item.selected:hover { background-color: #f3f3f3; }
+		.selecter .selecter-item.selected:hover { background-color: #baf2fb; }
 		.selecter .selecter-item.disabled:hover { background-color: #fff; }
 		
 		
@@ -1334,15 +1338,36 @@ body{
 
 	.scroller { overflow: hidden; overflow-x: hidden; overflow-y: hidden; position: relative; }
 	.scroller-content { height: 100%; overflow: auto; overflow-x: hidden; overflow-y: auto; position: relative; z-index: 1; }
-	.scroller-bar { background: #FBFBFB; border-left: 1px solid #EEEEEE; display: none; height: 100%; position: absolute; right: 0; top: 0; width: 20px; z-index: 2; }
-	.scroller-track { background: #FBFBFB; height: 100%; overflow: hidden; position: relative; width: 100%; }
-	.scroller-handle { background: #EEEEEE; border: 1px solid #D5D5D5; border-radius: 5px; cursor: pointer; height: 20px; overflow: hidden; position: absolute; right: 5px; top: 0; width: 10px; z-index: 2; 
+	.scroller-bar { background: #FBFBFB; display: none; height: 100%; position: absolute; right: 0; top: 0; width: 20px; z-index: 2; }
+	.scroller-track { background: #fff; height: 100%; overflow: hidden; position: relative; width: 100%; }
+	.scroller-handle {
+		background: none repeat scroll 0 0 #00DEFF;
+	border: 1px solid #D5D5D5;
+	border-radius: 2px 2px 2px 2px;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	right: 7px;
+	top: 0;
+	transition: right 0.1s linear 0s, width 0.1s linear 0s;
+	width: 6px;
+	z-index: 2;
 		-webkit-transition: right 0.1s linear, width 0.1s linear;
 		   -moz-transition: right 0.1s linear, width 0.1s linear;
 		   	-ms-transition: right 0.1s linear, width 0.1s linear;
 		   	 -o-transition: right 0.1s linear, width 0.1s linear;
 		   	 	transition: right 0.1s linear, width 0.1s linear;
 	}
+
+	.scroller-track:before {
+    background: none repeat scroll 0 0 #D5F6FB;
+    content: "";
+    display: block;
+    height: 100%;
+    position: relative;
+    right: -9px;
+    width: 2px;
+}
 	
 	/* Webkit Fix */
 	.scroller-content::-webkit-scrollbar,
