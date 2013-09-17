@@ -21,6 +21,7 @@
     <script src="js/libs/carousel.js"></script>
     <script src="js/libs/jquery.isotope.min.js"></script>
     <script src="js/libs/select.js"></script>
+    <script src="js/libs/scroll.js"></script>
     <script src="js/functions.js"></script>
     </head>
     <body>
@@ -54,19 +55,38 @@ $( "#tags" ).autocomplete({
 source: availableTags
 });
 });
+
+
 </script>
 <header class="main-head rel global-outer">
 
     <div class="global-inner ">
         <div class="search-wrap cf">
         <form method="get" action="search.php">
-               <div class="search-box-input search-box fl">
+               <div class="search-box-input search-box fl rel">
                    <input id="tags" type="search" class="search-box-input-itself">
                </div>  <!-- search-box-input -->
                <div class="search-box search-box-cat fl">
                    <div class="select-cat-wrap" data-icon="&#xe0f4;">
-                       All Categories
+                     <select name="selecme" id="selectik">
+                       <option value="Arts & Photography">Arts & Photography</option>
+                       <option value="Automotive">Automotive</option>
+                       <option value="Babies & Kids">Babies & Kids</option>
+                       <option value="Books & Media">Books & Media</option>
+                       <option value="Business & Finances">Business & Finances</option>
+                       <option value="CD & Music">CD & Music</option>
+                       <option value="Cell Phones & Gadgets">Cell Phones & Gadgets</option>
+                       <option value="Clothing & Accessories">Clothing & Accessories </option>
+                       <option value="Computers ">Computers</option>
+                       <option value="Dating & Personals">Dating & Personals </option>
+                       <option value="Department Stores">Department Stores </option>
+                       <option value="Education">Education </option>
+                     </select>
                    </div>
+                   <script>
+                      $("#selectik").selecter();
+
+                   </script>
                </div>  <!-- search-box-cat -->
                <div class="search-box-submit search-box fl">
                    <button type="" class="search-box-submit-itself g-button">Search</button>
