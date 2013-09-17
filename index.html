@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="web_icons.css">
     <link rel="stylesheet" href="css/media.css">
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+
     <link href='http://fonts.googleapis.com/css?family=Gafata' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <!-- don't delete -->
@@ -84,13 +84,17 @@ source: availableTags
                      </select>
                    </div>
                    <script>
-                      $("#selectik").selecter();
+                  jQuery(document).ready(function($) {
+                    
+               
 
-                      $(".selecter-options").scroller({
-                    customClass: "advanced",
-                    trackMargin: 15,
-                    handleSize: 40
-                  });
+                      $("#selectik").selecter({
+                              trackMargin: 15,
+                                handleSize: 40
+                      });
+
+
+                   });
                    </script>
                </div>  <!-- search-box-cat -->
                <div class="search-box-submit search-box fl">

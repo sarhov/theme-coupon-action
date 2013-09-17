@@ -1390,3 +1390,36 @@ body{
 	.scroller-horizontal .scroller-bar { border-left: none; border-top: 1px solid #EEEEEE; bottom: 0; height: 20px; top: auto; width: 100%; }
 	.scroller-horizontal .scroller-handle { bottom: 5px; height: 10px; right: auto; top: auto; width: 20px; }
 	.selecter .scroller-content { max-height: 260px; }
+
+	/*UI*/
+
+
+.ui-helper-hidden-accessible {
+    display: none;
+}
+
+.ui-autocomplete {
+    cursor: default;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.ui-button {
+    cursor: pointer;
+    display: inline-block;
+    line-height: normal;
+    margin-right: 0.1em;
+    overflow: visible;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ui-menu {
+    display: block;
+    list-style: none outside none;
+    margin: 0;
+    outline: medium none;
+    padding: 2px;
+}
