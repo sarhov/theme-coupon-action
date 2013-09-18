@@ -1533,3 +1533,13 @@ width: 2px;
 	font-family: gafata, serif;
 }
 
+
+.scroll-to-top{
+	font-family: denda, sans-serif;
+	padding: ;
+	background: #000;
+	cursor: pointer;
+	position: fixed;
+	right: 5%;
+	bottom: 10%;
+}
