@@ -1018,7 +1018,7 @@ width: 2px;
 }
 
 .content-item-big-title{
-	margin: 0;
+	margin: 0 0 15px 0;
 	font:6.25em denda-bold, sans-serif;
 	text-align: center;
 	color: #fff;
@@ -1027,15 +1027,38 @@ width: 2px;
 
 .content-item-rating{
 	text-align: center;
-	margin: 0 0  20px 0;
+	margin: 0 auto  15px ;
+	display: table;
+}
 
+.content-item-rating-item{
+	width: 30px;
+	height: 30px;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: #9c0;
+}
+
+.content-item-rating-item:not(:last-child){
+	margin-right: 2px;
+}
+
+.content-item-rating-item{
+	background: transparent url('../images/rating.png') no-repeat;
+}
+
+.rating-normal{
+	background-position: 0 -28px;
+}
+
+.rating-bad{
+	background-position: 0 -56px;
 }
 
 .content-item-main-title{
 	font: 1.38em denda, sans-serif;
 	color: #004a5f;
 	margin: 0 0  20px 0;
-
 }
 
 .content-item-excerpt{
