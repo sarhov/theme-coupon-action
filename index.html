@@ -141,7 +141,7 @@ source: availableTags
                 <span class="top-menu-item">
                   <a href="#">Blog</a>
                 </span>
-</nav>
+      </nav>
         </div> <!-- top-menu -->
     </div>  <!-- gloabl-inner -->
    </div> <!-- site-outer -->
@@ -190,24 +190,24 @@ source: availableTags
 
     </div>  <!-- carousel-items-wrap -->
   </div> <!-- banners-outer -->
-<script>
-$("#banners").carouFredSel({
-width : "100%",
-  scroll  : {
-    items     : 1,
-    duration    : 1000,
-    timeoutDuration : 5000
-  },
-items: 4, 
-prev  : "#banner-prev",
-next  : "#banner-next"
-});
-</script>
+  <script>
+    $("#banners").carouFredSel({
+    width : "100%",
+      scroll  : {
+        items     : 1,
+        duration    : 1000,
+        timeoutDuration : 5000
+      },
+    items: 4, 
+    prev  : "#banner-prev",
+    next  : "#banner-next"
+    });
+  </script>
 </div> <!-- carousel -->
 
 <div class="content-wrapper global-outer" role="main">
 
-<div class="content-wrapper-inner global-inner">
+  <div class="content-wrapper-inner global-inner">
    <div class="main-content-centered cf">
 
      <aside class="main-sidebar fl">
@@ -382,8 +382,11 @@ next  : "#banner-next"
                 Great Deal
               </div>
               <div class="content-item-rating">
-                <img alt="temp" title="temp" src="https://lh3.googleusercontent.com/-vv1zho2RcHQ/UjbI5Ax0n2I/AAAAAAAAACA/_VW7ObPWDe0/s0/2013-09-16_13-01-07.png" alt="">
-              </div>
+                <span class="rating-good content-item-rating-item">good</span>
+                <span class="rating-good content-item-rating-item">good</span>
+                <span class="rating-normal content-item-rating-item">normal</span>
+                <span class="rating-bad content-item-rating-item">bad</span>
+                <span class="rating-bad content-item-rating-item">bad</span>
               <h1 class="content-item-main-title">
                 $5 Shipping No Minimum
               </h1>  <!-- content-item-main-title -->
@@ -459,6 +462,8 @@ next  : "#banner-next"
               </h1>  <!-- content-item-main-title -->
               <div class="content-item-excerpt">
                 Excludes Electronics, Portable Power Tools, Video Games, Consoles & Gift Cards, Lawn & Garden.
+                <p class="content-item-excerpt-more-wrap">
+                <a href="#" class="content-item-excerpt-more more-excerpt" data-icon="&#xe0f4;">more</a></p>
               </div> <!-- content-item-excerpt -->
             <div class="content-item-info-wrapper">
                 <div class="content-item-info cf rel">

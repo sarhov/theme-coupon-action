@@ -1044,6 +1044,21 @@ width: 2px;
 	margin: 0 0  20px 0;
 }
 
+.content-item-excerpt-more-wrap{
+	margin: 0;
+}
+
+.content-item-excerpt-more{
+	color: #FFF;
+	font-effect: gafata, serif;
+	display: inline-block;
+}
+
+.content-item-excerpt-more:before{
+	float: right;
+	margin-left: 5px;
+}
+
 .content-item-info-wrapper{
 	margin: 0 0  20px 0;
 
