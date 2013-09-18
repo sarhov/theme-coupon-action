@@ -1536,10 +1536,42 @@ width: 2px;
 
 .scroll-to-top{
 	font-family: denda, sans-serif;
-	padding: ;
-	background: #000;
+	padding:0.63em;
+	color: #fff;
+	background: #fad7b6;
 	cursor: pointer;
 	position: fixed;
 	right: 5%;
-	bottom: 10%;
+	bottom: 200px;
+	text-align: center;
+	overflow: hidden;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.scroll-to-top:hover{
+	opacity: 0.8;
+}
+
+.scroll-to-top:before{
+	display: block;
+	font-size: 3em;
+	text-align: center;
+	margin-top: -20px;
+	margin-bottom: -10px;
+}
+
+.scroll-to-top-text{
+	display: block;
+	line-height: 1;
+}
+
+.scroll-to-top-small-text{
+	font-size: 1em;
+	margin-top: -5px;
+}
+
+.scroll-to-top-big-text{
+	font-size: 1.5em;
 }

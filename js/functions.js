@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 
 	 // The scrolling to top
 	$(window).scroll(function () {
-	    if ($(this).scrollTop() > 200) {
+	    if ($(this).scrollTop() > 300) {
 	        $('.scroll-to-top').fadeIn();
 	    } else {
 	        $('.scroll-to-top').fadeOut();
